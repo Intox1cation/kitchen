@@ -1,507 +1,655 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кухни на заказ в Минске ★ по индивидуальному размеру и проекту</title>
   <meta name="description" content="Кухни на заказ в Минске ★ по индивидуальному размеру и проекту">
-  <meta name="keywords"
-    content="кухня под заказ, кухня по индивидуальному проекту, заказать кухню, индивидуальный размер, качественнаякухня, современная кухня, фабричные кухни, кухня на заказ">
+  <meta name="keywords" content="кухня под заказ, кухня по индивидуальному проекту, заказать кухню, индивидуальный размер, качественнаякухня, современная кухня, фабричные кухни, кухня на заказ">
   <link rel="preload" as="style" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20230914230715"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20230915232059"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?_v=20230914230715">
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20230915232059">
 
-  <script src="./assets/js/bundle.min.js?_v=20230914230715" defer></script>
+  <script src="./assets/js/bundle.min.js?_v=20230915232059" defer></script>
 </head>
 
 <body>
   <div class="wrapper">
     <wc-toast position="top-right"></wc-toast>
     <header class="header header_sticky" id="header">
-      <div class="container">
-        <div class="header__inner">
-          <a href="#" class="header__logo">
-            <img src="./assets/images/logo.svg" alt="Логотип фирмы Шеф Кухни">
-          </a>
-          <div class="header__navigation">
-            <div class="menu" id="menu" data-mobile-container="menu">
-              <nav class="menu__inner">
-                <ul class="menu__list">
-                  <li class="menu__item menu-item">
-                    <a href="#">Кухни</a>
-                    <div class="menu__child submenu menu-child">
-                      <ul class="submenu__list">
-                        <li class="submenu__item menu-item">
-                          <a href="#">Современный стиль</a>
-                        </li>
-                        <li class="submenu__item menu-item">
-                          <a href="#">Неоклассический стиль</a>
-                        </li>
-                        <li class="submenu__item menu-item">
-                          <a href="#">Классический стиль</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="menu__item menu-item">
-                    <a href="#">Корпусная мебель</a>
-                  </li>
-                  <li class="menu__item menu-item">
-                    <a href="#">Портфолио</a>
-                  </li>
-                  <li class="menu__item menu-item">
-                    <a href="#">О нас</a>
-                    <div class="menu__child submenu menu-child">
-                      <ul class="submenu__list">
-                        <li class="submenu__item menu-item">
-                          <a href="#">О компании</a>
-                        </li>
-                        <li class="submenu__item menu-item">
-                          <a href="#">Архитектору и дизайнеру</a>
-                        </li>
-                        <li class="submenu__item menu-item">
-                          <a href="#">Франшиза</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="menu__item menu-item">
-                    <a href="#">Акции</a>
-                  </li>
-                  <li class="menu__item menu-item">
-                    <a href="#">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img src="./assets/images/logo.svg" alt="Логотип фирмы Шеф Кухни">
+      </a>
+      <div class="header__navigation" data-mobile-container="main">
+        <div class="header__navigation-actions d-none d-md-flex">
+          <button class="icon-button" data-mobile-close="main">
+            <span class="icon icon_big icon-close-circle"></span>
+          </button>
+        </div>
+        <div class="header__menu" id="menu">
+  <nav class="menu__inner">
+    <ul class="menu__list">
+      <li class="menu__item menu-item">
+        <a href="#">Кухни</a>
+        <div class="menu__child submenu menu-child">
+          <ul class="submenu__list">
+            <li class="submenu__item menu-item">
+              <a href="#">Современный стиль</a>
+            </li>
+            <li class="submenu__item menu-item">
+              <a href="#">Неоклассический стиль</a>
+            </li>
+            <li class="submenu__item menu-item">
+              <a href="#">Классический стиль</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu__item menu-item">
+        <a href="#">Корпусная мебель</a>
+      </li>
+      <li class="menu__item menu-item">
+        <a href="#">Портфолио</a>
+      </li>
+      <li class="menu__item menu-item">
+        <a href="#">О нас</a>
+        <div class="menu__child submenu menu-child">
+          <ul class="submenu__list">
+            <li class="submenu__item menu-item">
+              <a href="#">О компании</a>
+            </li>
+            <li class="submenu__item menu-item">
+              <a href="#">Архитектору и дизайнеру</a>
+            </li>
+            <li class="submenu__item menu-item">
+              <a href="#">Франшиза</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu__item menu-item">
+        <a href="#">Акции</a>
+      </li>
+      <li class="menu__item menu-item">
+        <a href="#">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+      </div>
+      <div class="header__actions">
+        <div class="header__action header-phones">
+          <div class="header-phones__inner">
+            <div class="header-phones__item">
+              <span class="icon icon-a1 icon_clear"></span>
+              <a href="tel:+375297271010">+375 (29) 727-10-10</a>
+            </div>
+            <div class="header-phones__item">
+              <span class="icon icon-mts icon_clear"></span>
+              <a href="tel:+375447271010">+375 (44) 727-10-10</a>
             </div>
           </div>
-          <div class="header__actions">
-            <div class="header__action header-phones">
-              <div class="header-phones__inner">
-                <div class="header-phones__item">
-                  <span class="icon icon-a1 icon_clear"></span>
-                  <a href="tel:+375297271010">+375 (29) 727-10-10</a>
-                </div>
-                <div class="header-phones__item">
-                  <span class="icon icon-mts icon_clear"></span>
-                  <a href="tel:+375447271010">+375 (44) 727-10-10</a>
-                </div>
+        </div>
+
+        <div class="header__action header-search">
+          <form class="header-search__form search-form" id="search-container">
+            <div class="search-form__inner">
+              <div class="search-form__input">
+                <span class="search-form__icon icon icon-search"></span>
+                <input type="text" name="q" placeholder="Поиск">
+              </div>
+              <div class="search-form__button">
+                <button class="button button_auto" type="submit">Найти</button>
               </div>
             </div>
 
-            <div class="header__action header-search">
-              <form class="header-search__form search-form" id="search-container">
-                <div class="search-form__inner">
-                  <div class="search-form__input">
-                    <span class="search-form__icon icon icon-search"></span>
-                    <input type="text" name="q" placeholder="Поиск">
-                  </div>
-                  <div class="search-form__button">
-                    <button class="button button_auto" type="submit">Найти</button>
-                  </div>
-                </div>
+            <button type="button" class="icon-button header-search__close" id="search-close">
+              <span class="icon icon-close"></span>
+            </button>
+          </form>
+          <button class="icon-button header-search__button" id="search-open">
+            <span class="icon icon-search"></span>
+          </button>
+        </div>
 
-                <button type="button" class="icon-button header-search__close" id="search-close">
-                  <span class="icon icon-close"></span>
-                </button>
-              </form>
-              <button class="icon-button header-search__button" id="search-open">
-                <span class="icon icon-search"></span>
-              </button>
+        <div class="header__action header-mobile-phones-button">
+          <button class="icon-button" id="phones-button">
+            <span class="icon icon-phone-new"></span>
+          </button>
+        </div>
+
+        <div class="header__action header-mobile-menu-button">
+          <button class="icon-button" data-mobile-open="main">
+            <span class="icon icon-menu-bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="section hero">
+  <div class="hero__background">
+    <div class="hero-background-slider swiper">
+      <div class="hero-background-slider__wrapper swiper-wrapper">
+        <div class="hero-background-slider__slide hero-background-slide swiper-slide">
+          <picture>
+            <source
+              srcset="./assets/images/slides/hero/kitchen-1_1x.avif 1x, ./assets/images/slides/hero/kitchen-1_2x.avif 2x, ./assets/images/slides/hero/kitchen-1_mobile.avif 576w">
+            <source
+              srcset="./assets/images/slides/hero/kitchen-1_1x.webp 1x, ./assets/images/slides/hero/kitchen-1_2x.webp 2x, ./assets/images/slides/hero/kitchen-1_mobile.webp 576w">
+            <img loading="lazy" src="./assets/images/slides/hero/kitchen-1_1x.jpg"
+              srcset="./assets/images/slides/hero/kitchen-1_1x.jpg 1x, ./assets/images/slides/hero/kitchen-1_2x.jpg 2x, ./assets/images/slides/hero/kitchen-1_mobile.jpg 576w"
+              alt="Новогодние скидки до 45% на кухни месяца до 31.12">
+          </picture>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+
+        <div class="hero-background-slider__slide hero-background-slide swiper-slide">
+          <picture>
+            <source
+              srcset="./assets/images/slides/hero/kitchen-2_1x.avif 1x, ./assets/images/slides/hero/kitchen-2_2x.avif 2x, ./assets/images/slides/hero/kitchen-2_mobile.avif 576w">
+            <source
+              srcset="./assets/images/slides/hero/kitchen-2_1x.webp 1x, ./assets/images/slides/hero/kitchen-2_2x.webp 2x, ./assets/images/slides/hero/kitchen-2_mobile.webp 576w">
+            <img loading="lazy" src="./assets/images/slides/hero/kitchen-1_1x.jpg"
+              srcset="./assets/images/slides/hero/kitchen-2_1x.jpg 1x, ./assets/images/slides/hero/kitchen-2_2x.jpg 2x, ./assets/images/slides/hero/kitchen-2_mobile.jpg 576w"
+              alt="Новогодние скидки до 45% на кухни месяца до 31.12">
+          </picture>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+
+        <div class="hero-background-slider__slide hero-background-slide swiper-slide">
+          <picture>
+            <source
+              srcset="./assets/images/slides/hero/kitchen-3_1x.avif 1x, ./assets/images/slides/hero/kitchen-3_2x.avif 2x, ./assets/images/slides/hero/kitchen-3_mobile.avif 576w">
+            <source
+              srcset="./assets/images/slides/hero/kitchen-3_1x.webp 1x, ./assets/images/slides/hero/kitchen-3_2x.webp 2x, ./assets/images/slides/hero/kitchen-3_mobile.webp 576w">
+            <img loading="lazy" src="./assets/images/slides/hero/kitchen-1_1x.jpg"
+              srcset="./assets/images/slides/hero/kitchen-3_1x.jpg 1x, ./assets/images/slides/hero/kitchen-3_2x.jpg 2x, ./assets/images/slides/hero/kitchen-3_mobile.jpg 576w"
+              alt="Новогодние скидки до 45% на кухни месяца до 31.12">
+          </picture>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">Шеф Кухни</h1>
+        <p class="hero__caption text text_5">Не просто мебель, а пространство объединяющее всё</p>
+        <a href="#" class="hero__button button">В Каталог</a>
+      </div>
+
+      <div class="hero__description">
+        <div class="hero-description-slider swiper">
+          <div class="hero-description-slider__wrapper swiper-wrapper">
+            <div class="hero-description-slider__slide hero-description-slide swiper-slide">
+              <p class="text text_1">Новогодние скидки</p>
+              <p class="hero-description-slide__title"><b>до 45%</b></p>
+              <p class="text text_1">на кухни месяца до 31.12</p>
+              <a href="#" class="hero-description-slide__link text text_2">Подробнее</a>
             </div>
 
-            <div class="header__action header-mobile-phones-button">
-              <button class="icon-button" id="phones-button">
-                <span class="icon icon-phone-new"></span>
-              </button>
+            <div class="hero-description-slider__slide hero-description-slide swiper-slide">
+              <p class="text text_1">Новогодние скидки</p>
+              <p class="hero-description-slide__title"><b>до 24%</b></p>
+              <p class="text text_1">на кухни месяца до 31.12</p>
+              <a href="#" class="hero-description-slide__link text text_2">Подробнее</a>
             </div>
 
-            <div class="header__action header-mobile-menu-button">
-              <button class="icon-button">
-                <span class="icon icon-menu-bar"></span>
-              </button>
+            <div class="hero-description-slider__slide hero-description-slide swiper-slide">
+              <p class="text text_1">Новогодние скидки</p>
+              <p class="hero-description-slide__title"><b>до 33%</b></p>
+              <p class="text text_1">на кухни месяца до 31.12</p>
+              <a href="#" class="hero-description-slide__link text text_2">Подробнее</a>
             </div>
+          </div>
+          <div class="hero-description-slider__dots"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="section section_about-us about-us">
+  <div class="container">
+    <div class="about-us__inner">
+      <div class="about-us__content">
+        <h2 class="about-us__title title h3">О нас</h2>
+        <div class="about-us__description">
+          <p>Мы, компания "Шеф Кухни" - лидер в индустрии кухонной мебели в Беларуси и России, работаем на рынке уже
+            более двух десятилетий. Мы гордо занимаем позицию официальных представителей высококачественных фабрик,
+            таких как «ЗОВ», «GeosIdeal» и «VogelBaum».</p>
+          <br>
+          <p>С годами наша компания разработала и успешно установила более 35000 проектов кухонной мебели. Более того,
+            75% наших клиентов пришли к нам посредством рекомендаций, что подтверждает высокую степень качества наших
+            услуг.
+          </p>
+        </div>
+        <a href="#">подробнее</a>
+      </div>
+      <div class="about-us__counters">
+        <div class="about-us__counter">
+          <span class="about-us__counter-value h2" data-counter data-number="10" data-time="1000" data-step="1"
+            data-init="0">10</span>
+          <span class="about-us__counter-caption text text_3">фирменных салонов</span>
+        </div>
+
+        <div class="about-us__counter">
+          <span class="about-us__counter-value h2" data-counter data-number="20" data-time="1100" data-step="1"
+            data-init="0">20</span>
+          <span class="about-us__counter-caption text text_3">лет на рынке</span>
+        </div>
+
+        <div class="about-us__counter">
+          <span class="about-us__counter-value h2"><span data-counter data-number="35" data-time="1300" data-step="1"
+              data-init="0">35</span>k</span>
+          <span class="about-us__counter-caption text text_3">реализованных проектов</span>
+        </div>
+
+        <div class="about-us__counter">
+          <span class="about-us__counter-value h2" data-counter data-number="185" data-time="1500" data-step="1"
+            data-init="0">185</span>
+          <span class="about-us__counter-caption text text_3">сотрудников</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="section section_quiz quiz">
+  <div class="container">
+    <div class="quiz__inner">
+      <h2 class="quiz__title title">Какая мебель вам необходима?</h2>
+
+      <div class="h5">Секция в разработке</div>
+    </div>
+  </div>
+</section>
+      <section class="section section_styles styles">
+  <div class="container">
+    <div class="styles__inner">
+      <div class="styles-item">
+        <div class="styles-item__image">
+          <img loading="lazy" src="./assets/images/system/style_1.jpg"
+            srcset="./assets/images/system/style_1_400w.jpg 900w, ./assets/images/system/style_1_600w.jpg 1400w, ./assets/images/system/style_1.jpg"
+            alt="Современный стиль | Шеф Кухни">
+        </div>
+        <div class="styles-item__body">
+          <div class="styles-item__title h3">Современный стиль</div>
+          <div class="styles-item__text text text_4">Мы гарантируем качество материалов и сборки кухонь и подтверждаем
+            это длительными гарантиями.</div>
+          <a href="#" class="button">Найти свою кухню</a>
+        </div>
+      </div>
+
+      <div class="styles-item">
+        <div class="styles-item__image">
+          <img loading="lazy" src="./assets/images/system/style_1.jpg"
+            srcset="./assets/images/system/style_2_400w.jpg 900w, ./assets/images/system/style_2_600w.jpg 1400w, ./assets/images/system/style_2.jpg"
+            alt="Неоклассический стиль | Шеф Кухни">
+        </div>
+        <div class="styles-item__body">
+          <div class="styles-item__title h3">Неоклассический стиль</div>
+          <div class="styles-item__text text text_4">Мы гарантируем качество материалов и сборки кухонь и подтверждаем
+            это длительными гарантиями.</div>
+          <a href="#" class="button">Найти свою кухню</a>
+        </div>
+      </div>
+
+      <div class="styles-item">
+        <div class="styles-item__image">
+          <img loading="lazy" src="./assets/images/system/style_1.jpg"
+            srcset="./assets/images/system/style_3_400w.jpg 900w, ./assets/images/system/style_3_600w.jpg 1400w, ./assets/images/system/style_3.jpg"
+            alt="Классический стиль | Шеф Кухни">
+        </div>
+        <div class="styles-item__body">
+          <div class="styles-item__title h3">Классический стиль</div>
+          <div class="styles-item__text text text_4">Мы гарантируем качество материалов и сборки кухонь и подтверждаем
+            это длительными гарантиями.</div>
+          <a href="#" class="button">Найти свою кухню</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="section section_consultation consultation">
+  <div class="consultation__background img-cover">
+    <picture>
+      <source srcset="./assets/images/system/free-consulting.avif" type="image/avif">
+      <source srcset="./assets/images/system/free-consulting.webp" type="image/webp">
+      <img src="./assets/images/system/free-consulting.jpg" alt="Бесплатная консультация от профеcсиональных дизайнеров">
+    </picture>
+  </div>
+  <div class="container">
+    <div class="consultation__inner">
+      <h2 class="consultation__title title h3">Бесплатная консультация</h2>
+      <p class="consultation__description">Запишитесь на бесплатную консультацию от профеcсиональных дизайнеров в наших
+        салонах и получите:</p>
+      <div class="consultation__content">
+        <ol class="consultation__list">
+          <li>3D проект вашей кухни</li>
+          <li>точную стоимость вашего проекта в разных конфигурациях</li>
+          <li>рекомендации по выбору фасадов</li>
+          <li>советы по компановке кухни с точки зрения эграномики</li>
+          <li>помощь в выборе цветовых решений</li>
+          <li>актуальную информацию о трендах в 2023 году</li>
+        </ol>
+        <form class="consultation__form consultation-form" id="consultation-form">
+          <div class="consultation-form__item field-box">
+            <div class="field">
+              <input type="text" class="field__input" name="name" placeholder="Имя *">
+            </div>
+            <div class="field-box__error"></div>
+          </div>
+
+          <div class="consultation-form__item field-box">
+            <div class="field">
+              <input type="text" class="field__input" name="phone" placeholder="Номер телефона *">
+            </div>
+            <div class="field-box__error"></div>
+          </div>
+
+          <p class="consultation-form__approve">Ваши данные под защитой и обрабатываются согласно политике
+            конфидициальности</p>
+          <div class="consultation-form__submit">
+            <button class="button" type="submit">Записаться на консультацию</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="section section_popular popular">
+  <div class="container">
+    <h2 class="popular__title title">Самые популярные кухни</h2>
+  </div>
+  <div class="popular__inner">
+    <div class="popular__slider popular-slider swiper">
+      <div class="popular-slider__wrapper swiper-wrapper">
+        <div class="popular-slider__slide popular-slide swiper-slide">
+  <div class="portfolio-card">
+    <div class="portfolio-card__image img-cover">
+      <picture>
+        <source
+          srcset="./assets/images/slides/popular/image-1_350w.avif 600w, ./assets/images/slides/popular/image-1_500w.avif 1400w, ./assets/images/slides/popular/image-1.avif"
+          type="image/avif">
+        <source
+          srcset="./assets/images/slides/popular/image-1_350w.webp 600w, ./assets/images/slides/popular/image-1_500w.webp 1400w, ./assets/images/slides/popular/image-1.webp"
+          type="image/webp">
+        <img loading="lazy" src="./assets/images/slides/popular/image-1.jpg"
+          srcset="./assets/images/slides/popular/image-1_350w.jpg 600w, ./assets/images/slides/popular/image-1_500w.jpg 1400w, ./assets/images/slides/popular/image-1.jpg"
+          alt="">
+      </picture>
+      <div class="swiper-lazy-preloader"></div>
+    </div>
+    <div class="portfolio-card__body">
+      <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
+      <a href="#" class="portfolio-card__link text text_3">
+        Подробнее
+        <span class="icon icon_big icon-slider-next"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+        <div class="popular-slider__slide popular-slide swiper-slide">
+  <div class="portfolio-card">
+    <div class="portfolio-card__image img-cover">
+      <picture>
+        <source
+          srcset="./assets/images/slides/popular/image-2_350w.avif 600w, ./assets/images/slides/popular/image-2_500w.avif 1400w, ./assets/images/slides/popular/image-2.avif"
+          type="image/avif">
+        <source
+          srcset="./assets/images/slides/popular/image-2_350w.webp 600w, ./assets/images/slides/popular/image-2_500w.webp 1400w, ./assets/images/slides/popular/image-2.webp"
+          type="image/webp">
+        <img loading="lazy" src="./assets/images/slides/popular/image-2.jpg"
+          srcset="./assets/images/slides/popular/image-2_350w.jpg 600w, ./assets/images/slides/popular/image-2_500w.jpg 1400w, ./assets/images/slides/popular/image-2.jpg"
+          alt="">
+      </picture>
+      <div class="swiper-lazy-preloader"></div>
+    </div>
+    <div class="portfolio-card__body">
+      <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
+      <a href="#" class="portfolio-card__link text text_3">
+        Подробнее
+        <span class="icon icon_big icon-slider-next"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+        <div class="popular-slider__slide popular-slide swiper-slide">
+  <div class="portfolio-card">
+    <div class="portfolio-card__image img-cover">
+      <picture>
+        <source
+          srcset="./assets/images/slides/popular/image-1_350w.avif 600w, ./assets/images/slides/popular/image-1_500w.avif 1400w, ./assets/images/slides/popular/image-1.avif"
+          type="image/avif">
+        <source
+          srcset="./assets/images/slides/popular/image-1_350w.webp 600w, ./assets/images/slides/popular/image-1_500w.webp 1400w, ./assets/images/slides/popular/image-1.webp"
+          type="image/webp">
+        <img loading="lazy" src="./assets/images/slides/popular/image-1.jpg"
+          srcset="./assets/images/slides/popular/image-1_350w.jpg 600w, ./assets/images/slides/popular/image-1_500w.jpg 1400w, ./assets/images/slides/popular/image-1.jpg"
+          alt="">
+      </picture>
+      <div class="swiper-lazy-preloader"></div>
+    </div>
+    <div class="portfolio-card__body">
+      <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
+      <a href="#" class="portfolio-card__link text text_3">
+        Подробнее
+        <span class="icon icon_big icon-slider-next"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+        <div class="popular-slider__slide popular-slide swiper-slide">
+  <div class="portfolio-card">
+    <div class="portfolio-card__image img-cover">
+      <picture>
+        <source
+          srcset="./assets/images/slides/popular/image-2_350w.avif 600w, ./assets/images/slides/popular/image-2_500w.avif 1400w, ./assets/images/slides/popular/image-2.avif"
+          type="image/avif">
+        <source
+          srcset="./assets/images/slides/popular/image-2_350w.webp 600w, ./assets/images/slides/popular/image-2_500w.webp 1400w, ./assets/images/slides/popular/image-2.webp"
+          type="image/webp">
+        <img loading="lazy" src="./assets/images/slides/popular/image-2.jpg"
+          srcset="./assets/images/slides/popular/image-2_350w.jpg 600w, ./assets/images/slides/popular/image-2_500w.jpg 1400w, ./assets/images/slides/popular/image-2.jpg"
+          alt="">
+      </picture>
+      <div class="swiper-lazy-preloader"></div>
+    </div>
+    <div class="portfolio-card__body">
+      <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
+      <a href="#" class="portfolio-card__link text text_3">
+        Подробнее
+        <span class="icon icon_big icon-slider-next"></span>
+      </a>
+    </div>
+  </div>
+</div>
+      </div>
+
+      <div class="popular-slider__navigation">
+        <button class="icon-button popular-slider__arrow popular-slider__arrow_prev">
+          <span class="icon icon-slider-prev"></span>
+        </button>
+        <button class="icon-button popular-slider__arrow popular-slider__arrow_next">
+          <span class="icon icon-slider-next"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="popular__more">
+        <a href="#" class="button">Смотреть портфолио</a>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="section section_credit-main credit-main">
+  <div class="container">
+    <div class="credit-main__inner">
+      <div class="credit-main__images">
+        <div class="credit-main__kitchen img-cover">
+          <picture>
+            <source
+              srcset="./assets/images/system/credit_background_400w.avif 600w, ./assets/images/system/credit_background_600w.avif 1400w, ./assets/images/system/credit_background.avif"
+              type="image/avif">
+            <source
+              srcset="./assets/images/system/credit_background_400w.webp 600w, ./assets/images/system/credit_background_600w.webp 1400w, ./assets/images/system/credit_background.webp"
+              type="image/webp">
+            <img src="./assets/images/system/credit_background.jpg"
+              srcset="./assets/images/system/credit_background_400w.jpg 600w, ./assets/images/system/credit_background_600w.jpg 1400w, ./assets/images/system/credit_background.jpg"
+              alt="Информация про рассрочку и кредит">
+          </picture>
+        </div>
+        <div class="credit-main__cards">
+          <div class="credit-main__card credit-main__card_1" data-parallax data-speed-x="1.4" data-speed-y="1.2">
+            <picture><source srcset="./assets/images/system/card-mtb.avif" type="image/avif"><source srcset="./assets/images/system/card-mtb.webp" type="image/webp"><img src="./assets/images/system/card-mtb.png" alt="Карта рассрочки от МТБанк"></picture>
+          </div>
+          <div class="credit-main__card credit-main__card_2" data-parallax data-speed-x="-1.3" data-speed-y="-1.1">
+            <picture><source srcset="./assets/images/system/card-belgaz.avif" type="image/avif"><source srcset="./assets/images/system/card-belgaz.webp" type="image/webp"><img src="./assets/images/system/card-belgaz.png" alt="Карта покупок от Белгазпромбанка"></picture>
           </div>
         </div>
       </div>
-    </header>
-    <main class="main">
-      <section class="section hero">
-        <div class="hero__background">
-          <div class="hero-background-slider swiper">
-            <div class="hero-background-slider__wrapper swiper-wrapper">
-              <div class="hero-background-slider__slide hero-background-slide swiper-slide">
-                <picture>
-                  <source
-                    srcset="./assets/images/slides/hero/kitchen-1_1x.avif 1x, ./assets/images/slides/hero/kitchen-1_2x.avif 2x, ./assets/images/slides/hero/kitchen-1_mobile.avif 576w">
-                  <source
-                    srcset="./assets/images/slides/hero/kitchen-1_1x.webp 1x, ./assets/images/slides/hero/kitchen-1_2x.webp 2x, ./assets/images/slides/hero/kitchen-1_mobile.webp 576w">
-                  <img loading="lazy" src="./assets/images/slides/hero/kitchen-1_1x.jpg"
-                    srcset="./assets/images/slides/hero/kitchen-1_1x.jpg 1x, ./assets/images/slides/hero/kitchen-1_2x.jpg 2x, ./assets/images/slides/hero/kitchen-1_mobile.jpg 576w"
-                    alt="Новогодние скидки до 45% на кухни месяца до 31.12">
-                </picture>
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-
-              <div class="hero-background-slider__slide hero-background-slide swiper-slide">
-                <picture>
-                  <source
-                    srcset="./assets/images/slides/hero/kitchen-2_1x.avif 1x, ./assets/images/slides/hero/kitchen-2_2x.avif 2x, ./assets/images/slides/hero/kitchen-2_mobile.avif 576w">
-                  <source
-                    srcset="./assets/images/slides/hero/kitchen-2_1x.webp 1x, ./assets/images/slides/hero/kitchen-2_2x.webp 2x, ./assets/images/slides/hero/kitchen-2_mobile.webp 576w">
-                  <img loading="lazy" src="./assets/images/slides/hero/kitchen-1_1x.jpg"
-                    srcset="./assets/images/slides/hero/kitchen-2_1x.jpg 1x, ./assets/images/slides/hero/kitchen-2_2x.jpg 2x, ./assets/images/slides/hero/kitchen-2_mobile.jpg 576w"
-                    alt="Новогодние скидки до 45% на кухни месяца до 31.12">
-                </picture>
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-
-              <div class="hero-background-slider__slide hero-background-slide swiper-slide">
-                <picture>
-                  <source
-                    srcset="./assets/images/slides/hero/kitchen-3_1x.avif 1x, ./assets/images/slides/hero/kitchen-3_2x.avif 2x, ./assets/images/slides/hero/kitchen-3_mobile.avif 576w">
-                  <source
-                    srcset="./assets/images/slides/hero/kitchen-3_1x.webp 1x, ./assets/images/slides/hero/kitchen-3_2x.webp 2x, ./assets/images/slides/hero/kitchen-3_mobile.webp 576w">
-                  <img loading="lazy" src="./assets/images/slides/hero/kitchen-1_1x.jpg"
-                    srcset="./assets/images/slides/hero/kitchen-3_1x.jpg 1x, ./assets/images/slides/hero/kitchen-3_2x.jpg 2x, ./assets/images/slides/hero/kitchen-3_mobile.jpg 576w"
-                    alt="Новогодние скидки до 45% на кухни месяца до 31.12">
-                </picture>
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="hero__inner">
-            <div class="hero__content">
-              <h1 class="hero__title">Шеф Кухни</h1>
-              <p class="hero__caption text text_5">Не просто мебель, а пространство объединяющее всё</p>
-              <a href="#" class="hero__button button">В Каталог</a>
-            </div>
-
-            <div class="hero__description">
-              <div class="hero-description-slider swiper">
-                <div class="hero-description-slider__wrapper swiper-wrapper">
-                  <div class="hero-description-slider__slide hero-description-slide swiper-slide">
-                    <p class="text text_1">Новогодние скидки</p>
-                    <p class="hero-description-slide__title"><b>до 45%</b></p>
-                    <p class="text text_1">на кухни месяца до 31.12</p>
-                    <a href="#" class="hero-description-slide__link text text_2">Подробнее</a>
-                  </div>
-
-                  <div class="hero-description-slider__slide hero-description-slide swiper-slide">
-                    <p class="text text_1">Новогодние скидки</p>
-                    <p class="hero-description-slide__title"><b>до 24%</b></p>
-                    <p class="text text_1">на кухни месяца до 31.12</p>
-                    <a href="#" class="hero-description-slide__link text text_2">Подробнее</a>
-                  </div>
-
-                  <div class="hero-description-slider__slide hero-description-slide swiper-slide">
-                    <p class="text text_1">Новогодние скидки</p>
-                    <p class="hero-description-slide__title"><b>до 33%</b></p>
-                    <p class="text text_1">на кухни месяца до 31.12</p>
-                    <a href="#" class="hero-description-slide__link text text_2">Подробнее</a>
-                  </div>
-                </div>
-                <div class="hero-description-slider__dots"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section_about-us about-us">
-        <div class="container">
-          <div class="about-us__inner">
-            <div class="about-us__content">
-              <h2 class="about-us__title title h3">О нас</h2>
-              <div class="about-us__description">
-                <p>Мы, компания "Шеф Кухни" - лидер в индустрии кухонной мебели в Беларуси и России, работаем на рынке
-                  уже
-                  более двух десятилетий. Мы гордо занимаем позицию официальных представителей высококачественных
-                  фабрик,
-                  таких как «ЗОВ», «GeosIdeal» и «VogelBaum».</p>
-                <br>
-                <p>С годами наша компания разработала и успешно установила более 35000 проектов кухонной мебели. Более
-                  того,
-                  75% наших клиентов пришли к нам посредством рекомендаций, что подтверждает высокую степень качества
-                  наших
-                  услуг.
-                </p>
-              </div>
-              <a href="#">подробнее</a>
-            </div>
-            <div class="about-us__counters">
-              <div class="about-us__counter">
-                <span class="about-us__counter-value h2" data-counter data-number="10" data-time="1000" data-step="1"
-                  data-init="0">10</span>
-                <span class="about-us__counter-caption text text_3">фирменных салонов</span>
-              </div>
-
-              <div class="about-us__counter">
-                <span class="about-us__counter-value h2" data-counter data-number="20" data-time="1100" data-step="1"
-                  data-init="0">20</span>
-                <span class="about-us__counter-caption text text_3">лет на рынке</span>
-              </div>
-
-              <div class="about-us__counter">
-                <span class="about-us__counter-value h2"><span data-counter data-number="35" data-time="1300"
-                    data-step="1" data-init="0">35</span>k</span>
-                <span class="about-us__counter-caption text text_3">реализованных проектов</span>
-              </div>
-
-              <div class="about-us__counter">
-                <span class="about-us__counter-value h2" data-counter data-number="185" data-time="1500" data-step="1"
-                  data-init="0">185</span>
-                <span class="about-us__counter-caption text text_3">сотрудников</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section_quiz quiz">
-        <div class="container">
-          <div class="quiz__inner">
-            <h2 class="quiz__title title">Какая мебель вам необходима?</h2>
-
-            <div class="h5">Секция в разработке</div>
-          </div>
-        </div>
-      </section>
-      <section class="section section_styles styles">
-        <div class="container">
-          <div class="styles__inner">
-            <div class="styles-item">
-              <div class="styles-item__image">
-                <img loading="lazy" src="./assets/images/system/style_1.jpg"
-                  srcset="./assets/images/system/style_1_400w.jpg 900w, ./assets/images/system/style_1_600w.jpg 1400w, ./assets/images/system/style_1.jpg"
-                  alt="Современный стиль | Шеф Кухни">
-              </div>
-              <div class="styles-item__body">
-                <div class="styles-item__title h3">Современный стиль</div>
-                <div class="styles-item__text text text_4">Мы гарантируем качество материалов и сборки кухонь и
-                  подтверждаем
-                  это длительными гарантиями.</div>
-                <a href="#" class="button">Найти свою кухню</a>
-              </div>
-            </div>
-
-            <div class="styles-item">
-              <div class="styles-item__image">
-                <img loading="lazy" src="./assets/images/system/style_1.jpg"
-                  srcset="./assets/images/system/style_2_400w.jpg 900w, ./assets/images/system/style_2_600w.jpg 1400w, ./assets/images/system/style_2.jpg"
-                  alt="Неоклассический стиль | Шеф Кухни">
-              </div>
-              <div class="styles-item__body">
-                <div class="styles-item__title h3">Неоклассический стиль</div>
-                <div class="styles-item__text text text_4">Мы гарантируем качество материалов и сборки кухонь и
-                  подтверждаем
-                  это длительными гарантиями.</div>
-                <a href="#" class="button">Найти свою кухню</a>
-              </div>
-            </div>
-
-            <div class="styles-item">
-              <div class="styles-item__image">
-                <img loading="lazy" src="./assets/images/system/style_1.jpg"
-                  srcset="./assets/images/system/style_3_400w.jpg 900w, ./assets/images/system/style_3_600w.jpg 1400w, ./assets/images/system/style_3.jpg"
-                  alt="Классический стиль | Шеф Кухни">
-              </div>
-              <div class="styles-item__body">
-                <div class="styles-item__title h3">Классический стиль</div>
-                <div class="styles-item__text text text_4">Мы гарантируем качество материалов и сборки кухонь и
-                  подтверждаем
-                  это длительными гарантиями.</div>
-                <a href="#" class="button">Найти свою кухню</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section_consultation consultation">
-        <div class="consultation__background img-cover">
-          <picture>
-            <source srcset="./assets/images/system/free-consulting.avif" type="image/avif">
-            <source srcset="./assets/images/system/free-consulting.webp" type="image/webp">
-            <img src="./assets/images/system/free-consulting.jpg"
-              alt="Бесплатная консультация от профеcсиональных дизайнеров">
-          </picture>
-        </div>
-        <div class="container">
-          <div class="consultation__inner">
-            <h2 class="consultation__title title h3">Бесплатная консультация</h2>
-            <p class="consultation__description">Запишитесь на бесплатную консультацию от профеcсиональных дизайнеров в
-              наших
-              салонах и получите:</p>
-            <div class="consultation__content">
-              <ol class="consultation__list">
-                <li>3D проект вашей кухни</li>
-                <li>точную стоимость вашего проекта в разных конфигурациях</li>
-                <li>рекомендации по выбору фасадов</li>
-                <li>советы по компановке кухни с точки зрения эграномики</li>
-                <li>помощь в выборе цветовых решений</li>
-                <li>актуальную информацию о трендах в 2023 году</li>
-              </ol>
-              <form class="consultation__form consultation-form" id="consultation-form">
-                <div class="consultation-form__item field-box">
-                  <div class="field">
-                    <input type="text" class="field__input" name="name" placeholder="Имя *">
-                  </div>
-                  <div class="field-box__error"></div>
-                </div>
-
-                <div class="consultation-form__item field-box">
-                  <div class="field">
-                    <input type="text" class="field__input" name="phone" placeholder="Номер телефона *">
-                  </div>
-                  <div class="field-box__error"></div>
-                </div>
-
-                <p class="consultation-form__approve">Ваши данные под защитой и обрабатываются согласно политике
-                  конфидициальности</p>
-                <div class="consultation-form__submit">
-                  <button class="button" type="submit">Записаться на консультацию</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section_popular popular">
-        <div class="container">
-          <h2 class="popular__title title">Самые популярные кухни</h2>
-        </div>
-        <div class="popular__inner">
-          <div class="popular__slider popular-slider swiper">
-            <div class="popular-slider__wrapper swiper-wrapper">
-              <div class="popular-slider__slide popular-slide swiper-slide">
-                <div class="portfolio-card">
-                  <div class="portfolio-card__image img-cover">
-                    <picture>
-                      <source
-                        srcset="./assets/images/slides/popular/image-1_350w.avif 600w, ./assets/images/slides/popular/image-1_500w.avif 1400w, ./assets/images/slides/popular/image-1.avif"
-                        type="image/avif">
-                      <source
-                        srcset="./assets/images/slides/popular/image-1_350w.webp 600w, ./assets/images/slides/popular/image-1_500w.webp 1400w, ./assets/images/slides/popular/image-1.webp"
-                        type="image/webp">
-                      <img loading="lazy" src="./assets/images/slides/popular/image-1.jpg"
-                        srcset="./assets/images/slides/popular/image-1_350w.jpg 600w, ./assets/images/slides/popular/image-1_500w.jpg 1400w, ./assets/images/slides/popular/image-1.jpg"
-                        alt="">
-                    </picture>
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="portfolio-card__body">
-                    <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
-                    <a href="#" class="portfolio-card__link text text_3">
-                      Подробнее
-                      <span class="icon icon_big icon-slider-next"></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="popular-slider__slide popular-slide swiper-slide">
-                <div class="portfolio-card">
-                  <div class="portfolio-card__image img-cover">
-                    <picture>
-                      <source
-                        srcset="./assets/images/slides/popular/image-2_350w.avif 600w, ./assets/images/slides/popular/image-2_500w.avif 1400w, ./assets/images/slides/popular/image-2.avif"
-                        type="image/avif">
-                      <source
-                        srcset="./assets/images/slides/popular/image-2_350w.webp 600w, ./assets/images/slides/popular/image-2_500w.webp 1400w, ./assets/images/slides/popular/image-2.webp"
-                        type="image/webp">
-                      <img loading="lazy" src="./assets/images/slides/popular/image-2.jpg"
-                        srcset="./assets/images/slides/popular/image-2_350w.jpg 600w, ./assets/images/slides/popular/image-2_500w.jpg 1400w, ./assets/images/slides/popular/image-2.jpg"
-                        alt="">
-                    </picture>
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="portfolio-card__body">
-                    <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
-                    <a href="#" class="portfolio-card__link text text_3">
-                      Подробнее
-                      <span class="icon icon_big icon-slider-next"></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="popular-slider__slide popular-slide swiper-slide">
-                <div class="portfolio-card">
-                  <div class="portfolio-card__image img-cover">
-                    <picture>
-                      <source
-                        srcset="./assets/images/slides/popular/image-1_350w.avif 600w, ./assets/images/slides/popular/image-1_500w.avif 1400w, ./assets/images/slides/popular/image-1.avif"
-                        type="image/avif">
-                      <source
-                        srcset="./assets/images/slides/popular/image-1_350w.webp 600w, ./assets/images/slides/popular/image-1_500w.webp 1400w, ./assets/images/slides/popular/image-1.webp"
-                        type="image/webp">
-                      <img loading="lazy" src="./assets/images/slides/popular/image-1.jpg"
-                        srcset="./assets/images/slides/popular/image-1_350w.jpg 600w, ./assets/images/slides/popular/image-1_500w.jpg 1400w, ./assets/images/slides/popular/image-1.jpg"
-                        alt="">
-                    </picture>
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="portfolio-card__body">
-                    <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
-                    <a href="#" class="portfolio-card__link text text_3">
-                      Подробнее
-                      <span class="icon icon_big icon-slider-next"></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="popular-slider__slide popular-slide swiper-slide">
-                <div class="portfolio-card">
-                  <div class="portfolio-card__image img-cover">
-                    <picture>
-                      <source
-                        srcset="./assets/images/slides/popular/image-2_350w.avif 600w, ./assets/images/slides/popular/image-2_500w.avif 1400w, ./assets/images/slides/popular/image-2.avif"
-                        type="image/avif">
-                      <source
-                        srcset="./assets/images/slides/popular/image-2_350w.webp 600w, ./assets/images/slides/popular/image-2_500w.webp 1400w, ./assets/images/slides/popular/image-2.webp"
-                        type="image/webp">
-                      <img loading="lazy" src="./assets/images/slides/popular/image-2.jpg"
-                        srcset="./assets/images/slides/popular/image-2_350w.jpg 600w, ./assets/images/slides/popular/image-2_500w.jpg 1400w, ./assets/images/slides/popular/image-2.jpg"
-                        alt="">
-                    </picture>
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="portfolio-card__body">
-                    <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
-                    <a href="#" class="portfolio-card__link text text_3">
-                      Подробнее
-                      <span class="icon icon_big icon-slider-next"></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="popular-slider__navigation">
-              <button class="icon-button popular-slider__arrow popular-slider__arrow_prev">
-                <span class="icon icon-slider-prev"></span>
-              </button>
-              <button class="icon-button popular-slider__arrow popular-slider__arrow_next">
-                <span class="icon icon-slider-next"></span>
-              </button>
-            </div>
+      <div class="credit-main__body">
+        <h2 class="credit-main__title h3">Про рассрочку и кредит</h2>
+        <p class="credit-main__text">Подробнее ...Качество и комфорт, стиль и функциональность, надёжность и уют — всё
+          это выгодно сочетается в кухнях, которые мы реализуем</p>
+        <a href="#" class="button button_contrast">Смотреть больше</a>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="section section_presentation presentation">
+  <div class="container">
+    <div class="presentation__inner">
+      <div class="presentation__description">
+        <h2 class="presentation__title title">Заголовок</h2>
+        <p>Подробнее подзаголовок Качество и комфорт, стиль и функциональность, надёжность и уют — всё это выгодно
+          сочетается в кухнях, которые мы реализуем</p>
+      </div>
+      <div class="presentation__more">
+        <a href="#" class="button">Смотреть больше</a>
+      </div>
+      <div class="presentation__video">
+        <!-- <div style="background: gray; width: 100%; height: 100%;"></div> -->
+        <iframe title="КУХНИ 2020 | Главные тренды в дизайне кухни на 2020 год?" width="100%" height="100%"
+          src="https://www.youtube.com/embed/4lf5letb57c?feature=oembed" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="section section_stocks-main stocks-main">
+  <div class="container">
+    <h2 class="stocks-main__title title">Акции</h2>
+    <div class="stocks-main__inner">
+      <div class="stocks-main__slider stocks-main-slider swiper">
+        <div class="stocks-main-slider__wrapper swiper-wrapper">
+          <div class="stocks-main-slider__slide swiper-slide">
+            <div class="stock-card stock-card_variant_1">
+  <div class="stock-card__background">
+    <picture>
+      <source srcset="./assets/images/slides/stocks/image-1_400w.avif 1400w, ./assets/images/slides/stocks/image-1.avif"
+        type="image/avif">
+      <source srcset="./assets/images/slides/stocks/image-1_400w.webp 1400w, ./assets/images/slides/stocks/image-1.webp"
+        type="image/webp">
+      <img src="./assets/images/slides/stocks/image-1.jpg"
+        srcset="./assets/images/slides/stocks/image-1_400w.jpg 1400w, ./assets/images/slides/stocks/image-1.jpg"
+        alt="Скидки на кухни месяца">
+    </picture>
+  </div>
+  <div class="stock-card__body">
+    <div class="stock-card__discount">
+      <div class="stock-card__discount-title h2">45%</div>
+      <div class="stock-card__discount-text">на кухни месяца</div>
+    </div>
+    <div class="stock-card__date">
+      до 31.12
+    </div>
+    <div class="stock-card__more">
+      <a href="#">подробнее</a>
+    </div>
+  </div>
+</div>
           </div>
 
-          <div class="container">
-            <div class="popular__more">
-              <a href="#" class="button">Смотреть портфолио</a>
-            </div>
+          <div class="stocks-main-slider__slide swiper-slide">
+            <div class="stock-card stock-card_variant_1">
+  <div class="stock-card__background">
+    <picture>
+      <source srcset="./assets/images/slides/stocks/image-2_400w.avif 1400w, ./assets/images/slides/stocks/image-2.avif"
+        type="image/avif">
+      <source srcset="./assets/images/slides/stocks/image-2_400w.webp 1400w, ./assets/images/slides/stocks/image-2.webp"
+        type="image/webp">
+      <img src="./assets/images/slides/stocks/image-2.jpg"
+        srcset="./assets/images/slides/stocks/image-2_400w.jpg 1400w, ./assets/images/slides/stocks/image-2.jpg"
+        alt="Скидки на кухни месяца">
+    </picture>
+  </div>
+  <div class="stock-card__body">
+    <div class="stock-card__discount">
+      <div class="stock-card__discount-title h2">45%</div>
+      <div class="stock-card__discount-text">на кухни месяца</div>
+    </div>
+    <div class="stock-card__date">
+      
+    </div>
+    <div class="stock-card__more">
+      <a href="#">подробнее</a>
+    </div>
+  </div>
+</div>
+          </div>
+
+          <div class="stocks-main-slider__slide swiper-slide">
+            <div class="stock-card stock-card_variant_1">
+  <div class="stock-card__background">
+    <picture>
+      <source srcset="./assets/images/slides/stocks/image-2_400w.avif 1400w, ./assets/images/slides/stocks/image-2.avif"
+        type="image/avif">
+      <source srcset="./assets/images/slides/stocks/image-2_400w.webp 1400w, ./assets/images/slides/stocks/image-2.webp"
+        type="image/webp">
+      <img src="./assets/images/slides/stocks/image-2.jpg"
+        srcset="./assets/images/slides/stocks/image-2_400w.jpg 1400w, ./assets/images/slides/stocks/image-2.jpg"
+        alt="Скидки на кухни месяца">
+    </picture>
+  </div>
+  <div class="stock-card__body">
+    <div class="stock-card__discount">
+      <div class="stock-card__discount-title h2">45%</div>
+      <div class="stock-card__discount-text">на кухни месяца</div>
+    </div>
+    <div class="stock-card__date">
+      до 31.12
+    </div>
+    <div class="stock-card__more">
+      <a href="#">подробнее</a>
+    </div>
+  </div>
+</div>
           </div>
         </div>
-      </section>
+      </div>
+
+      <div class="stocks-main__more d-none d-md-flex">
+        <a href="#" class="button button_secondary">Смотреть больше</a>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
     <footer class="footer"></footer>
 
