@@ -13,11 +13,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20230917222728"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20230918144935"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?_v=20230917222728">
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20230918144935">
 
-  <script src="./assets/js/bundle.min.js?_v=20230917222728" defer></script>
+  <script src="./assets/js/bundle.min.js?_v=20230918144935" defer></script>
 </head>
 
 <body>
@@ -758,6 +758,133 @@
                   высококлассными специалистами</p>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section section_calculation calculation">
+        <div class="calculation__background img-cover">
+          <picture>
+            <source srcset="./assets/images/common/calculation/background.avif" type="image/avif">
+            <source srcset="./assets/images/common/calculation/background.webp" type="image/webp"><img
+              src="./assets/images/common/calculation/background.jpg" alt="Рассчитать стоимость кухни">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="calculation__inner">
+            <form class="calculation__form form" id="calculation-form">
+              <div class="form__inner">
+                <header class="form__header">
+                  <div class="field-box">
+                    <div class="field field_variant_1">
+                      <select class="custom-select field__input" name="material" data-select>
+                        <option value="" disabled selected hidden>Материал кухни</option>
+                        <option value="value 1">Пункт 1</option>
+                        <option value="value 2">Пункт 2</option>
+                        <option value="value 3">Пункт 3</option>
+                        <option value="value 4">Пункт 4</option>
+                      </select>
+                    </div>
+                    <div class="field-box__error"></div>
+                  </div>
+
+                  <div class="field-box">
+                    <div class="field field_variant_1">
+                      <select class="custom-select field__input" name="layout" data-select>
+                        <option value="" disabled selected hidden>Тип планировки</option>
+                        <option value="value 1">Пункт 1</option>
+                        <option value="value 2">Пункт 2</option>
+                        <option value="value 3">Пункт 3</option>
+                        <option value="value 4">Пункт 4</option>
+                      </select>
+                    </div>
+                    <div class="field-box__error"></div>
+                  </div>
+
+                  <div class="field-box">
+                    <div class="field field_variant_1">
+                      <input type="text" class="field__input" name="area" placeholder="Площадь кухни">
+                    </div>
+                    <div class="field-box__error"></div>
+                  </div>
+                </header>
+
+                <div class="form__fields">
+                  <div class="field-box">
+                    <div class="field">
+                      <input type="text" class="field__input" name="name" placeholder="Имя *">
+                    </div>
+                    <div class="field-box__error"></div>
+                  </div>
+
+                  <div class="field-box">
+                    <div class="field">
+                      <input type="tel" class="field__input" inputmode="tel" name="phone"
+                        placeholder="Номер телефона *">
+                    </div>
+                    <div class="field-box__error"></div>
+                  </div>
+                </div>
+
+                <div class="field-box">
+                  <div class="field field_variant_2">
+                    <label class="checkbox">
+                      <input name="approve" type="checkbox" checked>
+                      <span class="checkbox__text">Ваши данные под защитой и обрабатываются согласно политике
+                        конфидициальности</span>
+                      <span class="checkbox__icon"></span>
+                    </label>
+                  </div>
+                  <div class="field-box__error"></div>
+                </div>
+
+                <footer class="form__footer">
+                  <button type="submit" class="button">Рассчитать стоимость</button>
+                </footer>
+              </div>
+
+              <div class="form__success form-success" data-form-success>
+                <div class="form-success__logo">
+                  <img src="./assets/images/logo.svg" alt="Логотип фирмы Шеф Кухни">
+                </div>
+                <div class="form-success__close" data-close>
+                  <button type="button" class="icon-button">
+                    <span class="icon icon-close"></span>
+                  </button>
+                </div>
+                <div class="form-success__inner">
+                  <div class="form-success__meta">
+                    <h2 class="form-success__title">Ваша заявка принята!</h2>
+                    <p>Мы свяжемся с вами в ближайшее время</p>
+                  </div>
+                  <div class="form-success__image-wrapper">
+                    <div class="form-success__image">
+                      <picture>
+                        <source srcset="./assets/images/system/phone-social.avif" type="image/avif">
+                        <source srcset="./assets/images/system/phone-social.webp" type="image/webp"><img
+                          src="./assets/images/system/phone-social.png" alt="Шеф Кухни в социальных сетях">
+                      </picture>
+                    </div>
+                  </div>
+                  <footer class="form-success__footer">
+                    <div class="form-success__social">
+                      <ul class="form-success__social-list">
+                        <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+                        <li><a href="#"><span class="icon icon-vk"></span></a></li>
+                        <li><a href="#"><span class="icon icon-pinterest"></span></a></li>
+                        <li><a href="#"><span class="icon icon-instagram"></span></a></li>
+                        <li><a href="#"><span class="icon icon-youtube"></span></a></li>
+                        <li><a href="#"><span class="icon icon-od"></span></a></li>
+                      </ul>
+                      <p>Не забудь подписаться на наши социальные сети!</p>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </form>
+            <div class="calculation__meta">
+              <h2 class="calculation__title">Рассчитать стоимость кухни</h2>
+              <p>Введите свой номер телефона и мы предоставим вам расчет стоимости вашей кухни</p>
+            </div>
           </div>
         </div>
       </section>
