@@ -13,11 +13,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20230918144935"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20230918233815"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?_v=20230918144935">
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20230918233815">
 
-  <script src="./assets/js/bundle.min.js?_v=20230918144935" defer></script>
+  <script src="./assets/js/bundle.min.js?_v=20230918233815" defer></script>
 </head>
 
 <body>
@@ -87,13 +87,13 @@
             </div>
           </div>
           <div class="header__actions">
-            <div class="header__action header-phones">
-              <div class="header-phones__inner">
-                <div class="header-phones__item">
+            <div class="header__action header__action_communication communication">
+              <div class="communication__inner">
+                <div class="communication__item">
                   <span class="icon icon-a1 icon_clear"></span>
                   <a href="tel:+375297271010">+375 (29) 727-10-10</a>
                 </div>
-                <div class="header-phones__item">
+                <div class="communication__item">
                   <span class="icon icon-mts icon_clear"></span>
                   <a href="tel:+375447271010">+375 (44) 727-10-10</a>
                 </div>
@@ -123,7 +123,7 @@
 
             <div class="header__action header-mobile-phones-button">
               <button class="icon-button" id="phones-button">
-                <span class="icon icon-phone-new"></span>
+                <span class="icon icon-phone"></span>
               </button>
             </div>
 
@@ -867,7 +867,7 @@
                   </div>
                   <footer class="form-success__footer">
                     <div class="form-success__social">
-                      <ul class="form-success__social-list">
+                      <ul class="form-success__social-list social-list">
                         <li><a href="#"><span class="icon icon-facebook"></span></a></li>
                         <li><a href="#"><span class="icon icon-vk"></span></a></li>
                         <li><a href="#"><span class="icon icon-pinterest"></span></a></li>
@@ -1121,8 +1121,86 @@
 
 
     </main>
-    <footer class="footer"></footer>
-
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="/" class="footer__logo">
+            <img src="./assets/images/logo.svg" alt="Логотип фирмы Шеф Кухни">
+          </a>
+          <ul class="footer__menu">
+            <li class="footer__menu-item footer__menu-item_active"><a href="#">Кухни</a></li>
+            <li class="footer__menu-item"><a href="#">Корпусная мебель</a></li>
+            <li class="footer__menu-item"><a href="#">Портфолио</a></li>
+            <li class="footer__menu-item"><a href="#">О нас</a></li>
+            <li class="footer__menu-item"><a href="#">Акции</a></li>
+            <li class="footer__menu-item"><a href="#">Контакты</a></li>
+          </ul>
+          <div class="footer__communication communication">
+            <div class="communication__inner">
+              <div class="communication__item">
+                <span class="icon icon-a1 icon_clear"></span>
+                <a href="tel:+375297271010">+375 (29) 727-10-10</a>
+              </div>
+              <div class="communication__item">
+                <span class="icon icon-mts icon_clear"></span>
+                <a href="tel:+375447271010">+375 (44) 727-10-10</a>
+              </div>
+              <div class="communication__item">
+                <span class="icon icon-email icon_primary"></span>
+                <a href="mailto:info@shefkuhni.by">info@shefkuhni.by</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__social">
+            <ul class=" social-list">
+              <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon icon-vk"></span></a></li>
+              <li><a href="#"><span class="icon icon-pinterest"></span></a></li>
+              <li><a href="#"><span class="icon icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon icon-youtube"></span></a></li>
+              <li><a href="#"><span class="icon icon-od"></span></a></li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <a href="#">Договор публичной оферты</a>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__address">
+            <div class="addresses">
+              <div class="addresses__input">
+                <div class="field">
+                  <div class="field__icon">
+                    <span class="icon icon-mark"></span>
+                  </div>
+                  <select name="address" class="custom-select" data-select>
+                    <option value="">Минск</option>
+                    <option value="">Москва</option>
+                    <option value="">Алматы</option>
+                    <option value="">Брянск</option>
+                    <option value="">Актау</option>
+                    <option value="">Волгоград</option>
+                    <option value="">Калуга</option>
+                    <option value="">Курск</option>
+                    <option value="">Воронеж</option>
+                    <option value="">Мозырь</option>
+                    <option value="">Солигорск</option>
+                    <option value="">Нур-Султан</option>
+                  </select>
+                </div>
+              </div>
+              <ul class="addresses__list">
+                <li class="addresses__item">г. Минск, ул. Богдановича, 53</li>
+                <li class="addresses__item">г. Минск, ул. Я. Коласа, 50/1</li>
+                <li class="addresses__item">БЦ “S.Union” , Новодворский сельсовет, 40 ( ст.м. Могилевская)</li>
+                <li class="addresses__item">г. Минск, ул. Тимирязева, 123/1, павильон № 58 ( 2 этаж), ТЦ “Ждановичи”
+                </li>
+                <li class="addresses__item">г. Минск, пр-т. Победителей, 129</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 
