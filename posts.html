@@ -33,12 +33,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20230924232124"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20230927222016"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/libs.css?_v=20230924232124">
-  <link rel="stylesheet" href="./assets/css/style.css?_v=20230924232124">
+  <link rel="stylesheet" href="./assets/css/libs.css?_v=20230927222016">
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20230927222016">
 
-  <script src="./assets/js/bundle.min.js?_v=20230924232124" defer></script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8af7f125-89a4-425d-b14a-f9f752b36720&lang=ru_RU&_v=20230927222016"></script>
+  <script src="./assets/js/bundle.min.js?_v=20230927222016" defer></script>
+
 </head>
 
 <body>
@@ -190,7 +193,7 @@
         </div>
         <div class="page-navigation__actions">
           <div class="page-navigation__item">
-            <button class="button button_text button_auto">
+            <button class="button button_text button_auto" data-filter-button>
               <span class="d-block d-md-none">Фильтр</span>
               <span class="button__icon button__icon_right icon icon-filter"></span>
             </button>
@@ -624,13 +627,13 @@
     </div>
   </div>
 </div>
-      <section class="section section_big salons">
+      <section class="section section_big salons-short">
   <div class="container">
     <header class="section__header">
       <h2 class="title">Контакты</h2>
     </header>
-    <div class="salons__inner">
-      <div class="salons__address addresses">
+    <div class="salons-short__inner">
+      <div class="salons-short__address addresses">
         <div class="addresses__input">
           <div class="field">
             <div class="field__icon">
@@ -653,15 +656,15 @@
           </div>
         </div>
         <ul class="addresses__list">
-          <li class="addresses__item">
+          <li class="addresses__item" map-trigger="fill_1">
             <span>Салон "Шеф Кухни"</span>
             <span>г. Минск, ул. Богдановича, 53</span>
           </li>
-          <li class="addresses__item">
+          <li class="addresses__item" map-trigger="fill_2">
             <span>Салон "Шеф Кухни"</span>
             <span>г. Минск, ул. Я. Коласа, 50/1</span>
           </li>
-          <li class="addresses__item">
+          <li class="addresses__item" map-trigger="fill_3">
             <span>Салон "Шеф Кухни"</span>
             <span>БЦ “S.Union” , Новодворский сельсовет, 40 ( ст.м. Могилевская)</span>
           </li>
@@ -676,8 +679,8 @@
         </ul>
       </div>
 
-      <div class="salons__map">
-        <header class="salons__map-header">
+      <div class="salons-short__map">
+        <header class="salons-short__map-header">
           <div class="list-item">
             <span class="list-item__title">
               <a href="#">3D тур по салонам</a>
@@ -686,9 +689,10 @@
             <p class="list-item__text">Пройдитесь по нашим салонам не выходя из дома </p>
           </div>
         </header>
-        <div class="salons__viewport">
-          <script charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adb7b444d8bfeb5a9e1bd36cd7c76cbc4ce1d3dfac685a04591610462b108e64b&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true&_v=20230924232124"></script>
+        <div class="salons-short__viewport">
+          <div class="map" id="map"></div>
+          <!-- <script charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adb7b444d8bfeb5a9e1bd36cd7c76cbc4ce1d3dfac685a04591610462b108e64b&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true&_v=20230927222016"></script> -->
         </div>
       </div>
     </div>
@@ -727,12 +731,9 @@
       </div>
       <div class="footer__social">
         <ul class=" social-list">
-  <li><a href="#"><span class="icon icon-facebook"></span></a></li>
-  <li><a href="#"><span class="icon icon-vk"></span></a></li>
-  <li><a href="#"><span class="icon icon-pinterest"></span></a></li>
-  <li><a href="#"><span class="icon icon-instagram"></span></a></li>
-  <li><a href="#"><span class="icon icon-youtube"></span></a></li>
-  <li><a href="#"><span class="icon icon-od"></span></a></li>
+  
+   <li><a href="#"><span class="icon icon-facebook"></span></a></li>  <li><a href="#"><span class="icon icon-vk"></span></a></li>  <li><a href="#"><span class="icon icon-pinterest"></span></a></li>  <li><a href="#"><span class="icon icon-instagram"></span></a></li>  <li><a href="#"><span class="icon icon-youtube"></span></a></li>  <li><a href="#"><span class="icon icon-od"></span></a></li> 
+    
 </ul>
       </div>
       <div class="footer__links">
@@ -775,6 +776,69 @@
   </div>
 </footer>
   </div>
+
+  <div class="modal-content filter" data-filter-modal>
+  <header class="modal-content__header">
+    <h2 class="modal-content__title h3">Фильтр</h2>
+    <div class="modal-content__close" data-modal-close>
+      <span class="icon icon_small icon-close"></span>
+    </div>
+  </header>
+  <div class="modal-content__body filter__body">
+    <div class="filter__box">
+      <div class="filter__box-header">
+        <div class="filter__box-title">Тип планировки</div>
+        <div class="filter__box-icon">
+          <span class="icon icon-chevron"></span>
+        </div>
+      </div>
+      <div class="filter__box-body">
+        <div class="filter__box-row">
+          <label class="checkbox">
+            <input name="approve" type="checkbox" checked>
+            <span class="checkbox__text">Угловая</span>
+            <span class="checkbox__icon"></span>
+          </label>
+        </div>
+
+        <div class="filter__box-row">
+          <label class="checkbox">
+            <input name="approve" type="checkbox">
+            <span class="checkbox__text">Линейная</span>
+            <span class="checkbox__icon"></span>
+          </label>
+        </div>
+
+        <div class="filter__box-row">
+          <label class="checkbox">
+            <input name="approve" type="checkbox">
+            <span class="checkbox__text">П-образная</span>
+            <span class="checkbox__icon"></span>
+          </label>
+        </div>
+
+        <div class="filter__box-row">
+          <label class="checkbox">
+            <input name="approve" type="checkbox">
+            <span class="checkbox__text">С островом</span>
+            <span class="checkbox__icon"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <footer class="modal-content__footer">
+    <button class="button button_small button_full button_variant_2">
+      Применить
+    </button>
+
+    <button class="button button_small button_text">
+      Сбросить
+    </button>
+  </footer>
+</div>
 </body>
 
 </html>
