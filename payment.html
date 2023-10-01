@@ -33,15 +33,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20230927222016"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20231001221506"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/libs.css?_v=20230927222016">
-  <link rel="stylesheet" href="./assets/css/style.css?_v=20230927222016">
+  <link rel="stylesheet" href="./assets/css/libs.css?_v=20231001221506">
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20231001221506">
 
-
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=8af7f125-89a4-425d-b14a-f9f752b36720&lang=ru_RU&_v=20230927222016"></script>
-  <script src="./assets/js/bundle.min.js?_v=20230927222016" defer></script>
-
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8af7f125-89a4-425d-b14a-f9f752b36720&lang=ru_RU&_v=20231001221506"></script>
+  <script src="./assets/js/bundle.min.js?_v=20231001221506" defer></script>
 </head>
 
 <body>
@@ -50,7 +48,7 @@
     <header class="header header_sticky" id="header">
   <div class="container">
     <div class="header__inner">
-      <a href="#" class="header__logo">
+      <a href="./" class="header__logo">
         <img src="./assets/images/logo.svg" alt="Логотип фирмы Шеф Кухни">
       </a>
       <div class="header__navigation" data-mobile-container="main">
@@ -63,17 +61,17 @@
   <nav class="menu__inner">
     <ul class="menu__list">
       <li class="menu__item menu-item">
-        <a href="#">Кухни</a>
+        <a href="./catalog.html">Кухни</a>
         <div class="menu__child submenu menu-child">
           <ul class="submenu__list">
             <li class="submenu__item menu-item">
-              <a href="#">Современный стиль</a>
+              <a href="./catalog.html">Современный стиль</a>
             </li>
             <li class="submenu__item menu-item">
-              <a href="#">Неоклассический стиль</a>
+              <a href="./catalog.html">Неоклассический стиль</a>
             </li>
             <li class="submenu__item menu-item">
-              <a href="#">Классический стиль</a>
+              <a href="./catalog.html">Классический стиль</a>
             </li>
           </ul>
         </div>
@@ -82,14 +80,14 @@
         <a href="#">Корпусная мебель</a>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">Портфолио</a>
+        <a href="./portfolio.html">Портфолио</a>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">О нас</a>
+        <a href="./company.html">О нас</a>
         <div class="menu__child submenu menu-child">
           <ul class="submenu__list">
             <li class="submenu__item menu-item">
-              <a href="#">О компании</a>
+              <a href="./company.html">О компании</a>
             </li>
             <li class="submenu__item menu-item">
               <a href="#">Архитектору и дизайнеру</a>
@@ -101,10 +99,10 @@
         </div>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">Акции</a>
+        <a href="./stocks.html">Акции</a>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">Контакты</a>
+        <a href="./contacts.html">Контакты</a>
       </li>
     </ul>
   </nav>
@@ -190,7 +188,7 @@
     <header class="section__header">
       <h1 class="payment__title h2">Оплата</h1>
     </header>
-    <div class="payment__inner editor">
+    <div class="payment__inner editor" data-viewer>
       <div class="payment__item">
         <h2 class="payment__item-title h3">Предоплата от 30%</h2>
         <div class="payment__item-content">
@@ -300,7 +298,7 @@
           </div>
         </div>
         <div class="credit-catalog__more">
-          <a href="#" class="button button_secondary button_transparent">Подробнее о рассрочке</a>
+          <a href="./credit.html" class="button button_secondary button_transparent">Подробнее о рассрочке</a>
         </div>
       </div>
     </div>
@@ -313,14 +311,16 @@
     </header>
     <div class="projects-short__inner">
       <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-1.avif" type="image/avif"><source srcset="./assets/images/projects/image-1.webp" type="image/webp"><img src="./assets/images/projects/image-1.jpg" alt="Кухня угловая VOLEBAUM BOSTON"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
+     <a href="#"
+      class="chip chip_fill ">
+      45%</a> 
   </div>
   
   <div class="card__details">
@@ -332,7 +332,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -344,7 +344,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">Кухня угловая VOLEBAUM BOSTON</a>
+        <a href="./product.html">Кухня угловая VOLEBAUM BOSTON</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -355,14 +355,16 @@
 </div>
 
       <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-2.avif" type="image/avif"><source srcset="./assets/images/projects/image-2.webp" type="image/webp"><img src="./assets/images/projects/image-2.jpg" alt="МУНСТОУН"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">33%</a> 
+     <a href="#"
+      class="chip chip_fill ">
+      33%</a> 
   </div>
   
   <div class="card__details">
@@ -374,7 +376,8 @@
         
 
           
-           <a href="#">МДФ</a> 
+           <a
+            href="./catalog.html">МДФ</a> 
             
       </div>
       
@@ -383,7 +386,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">МУНСТОУН</a>
+        <a href="./product.html">МУНСТОУН</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -394,14 +397,16 @@
 </div>
 
       <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-3.avif" type="image/avif"><source srcset="./assets/images/projects/image-3.webp" type="image/webp"><img src="./assets/images/projects/image-3.jpg" alt="БЕРКЛИ"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">24%</a> 
+     <a href="#"
+      class="chip chip_fill ">
+      24%</a> 
   </div>
   
   <div class="card__details">
@@ -413,7 +418,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -425,7 +430,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">БЕРКЛИ</a>
+        <a href="./product.html">БЕРКЛИ</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -493,7 +498,7 @@
         <header class="salons-short__map-header">
           <div class="list-item">
             <span class="list-item__title">
-              <a href="#">3D тур по салонам</a>
+              <a href="https://test.360tour.by/sh_ku/" rel="noreferrer noopener nofollow">3D тур по салонам</a>
               <span class="icon icon-slider-next"></span>
             </span>
             <p class="list-item__text">Пройдитесь по нашим салонам не выходя из дома </p>
@@ -501,8 +506,6 @@
         </header>
         <div class="salons-short__viewport">
           <div class="map" id="map"></div>
-          <!-- <script charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adb7b444d8bfeb5a9e1bd36cd7c76cbc4ce1d3dfac685a04591610462b108e64b&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true&_v=20230927222016"></script> -->
         </div>
       </div>
     </div>
@@ -512,16 +515,16 @@
     <footer class="footer">
   <div class="container">
     <div class="footer__inner">
-      <a href="/" class="footer__logo">
+      <a href="./" class="footer__logo">
         <img src="./assets/images/logo.svg" alt="Логотип фирмы Шеф Кухни">
       </a>
       <ul class="footer__menu">
-        <li class="footer__menu-item footer__menu-item_active"><a href="#">Кухни</a></li>
+        <li class="footer__menu-item footer__menu-item_active"><a href="./catalog.html">Кухни</a></li>
         <li class="footer__menu-item"><a href="#">Корпусная мебель</a></li>
-        <li class="footer__menu-item"><a href="#">Портфолио</a></li>
-        <li class="footer__menu-item"><a href="#">О нас</a></li>
-        <li class="footer__menu-item"><a href="#">Акции</a></li>
-        <li class="footer__menu-item"><a href="#">Контакты</a></li>
+        <li class="footer__menu-item"><a href="./portfolio.html">Портфолио</a></li>
+        <li class="footer__menu-item"><a href="./company.html">О нас</a></li>
+        <li class="footer__menu-item"><a href="./stocks.html">Акции</a></li>
+        <li class="footer__menu-item"><a href="./contacts.html">Контакты</a></li>
       </ul>
       <div class="footer__communication communication">
         <div class="communication__inner">
@@ -547,8 +550,8 @@
 </ul>
       </div>
       <div class="footer__links">
-        <a href="#">Договор публичной оферты</a>
-        <a href="#">Политика конфиденциальности</a>
+        <a href="./agreement.html">Договор публичной оферты</a>
+        <a href="./privacy-policy.html">Политика конфиденциальности</a>
       </div>
       <div class="footer__address">
         <div class="addresses">

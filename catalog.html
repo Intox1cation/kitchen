@@ -33,15 +33,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20230927222016"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20231001221506"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/libs.css?_v=20230927222016">
-  <link rel="stylesheet" href="./assets/css/style.css?_v=20230927222016">
+  <link rel="stylesheet" href="./assets/css/libs.css?_v=20231001221506">
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20231001221506">
 
-
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=8af7f125-89a4-425d-b14a-f9f752b36720&lang=ru_RU&_v=20230927222016"></script>
-  <script src="./assets/js/bundle.min.js?_v=20230927222016" defer></script>
-
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8af7f125-89a4-425d-b14a-f9f752b36720&lang=ru_RU&_v=20231001221506"></script>
+  <script src="./assets/js/bundle.min.js?_v=20231001221506" defer></script>
 </head>
 
 <body>
@@ -50,7 +48,7 @@
     <header class="header header_sticky" id="header">
   <div class="container">
     <div class="header__inner">
-      <a href="#" class="header__logo">
+      <a href="./" class="header__logo">
         <img src="./assets/images/logo.svg" alt="Логотип фирмы Шеф Кухни">
       </a>
       <div class="header__navigation" data-mobile-container="main">
@@ -63,17 +61,17 @@
   <nav class="menu__inner">
     <ul class="menu__list">
       <li class="menu__item menu-item">
-        <a href="#">Кухни</a>
+        <a href="./catalog.html">Кухни</a>
         <div class="menu__child submenu menu-child">
           <ul class="submenu__list">
             <li class="submenu__item menu-item">
-              <a href="#">Современный стиль</a>
+              <a href="./catalog.html">Современный стиль</a>
             </li>
             <li class="submenu__item menu-item">
-              <a href="#">Неоклассический стиль</a>
+              <a href="./catalog.html">Неоклассический стиль</a>
             </li>
             <li class="submenu__item menu-item">
-              <a href="#">Классический стиль</a>
+              <a href="./catalog.html">Классический стиль</a>
             </li>
           </ul>
         </div>
@@ -82,14 +80,14 @@
         <a href="#">Корпусная мебель</a>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">Портфолио</a>
+        <a href="./portfolio.html">Портфолио</a>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">О нас</a>
+        <a href="./company.html">О нас</a>
         <div class="menu__child submenu menu-child">
           <ul class="submenu__list">
             <li class="submenu__item menu-item">
-              <a href="#">О компании</a>
+              <a href="./company.html">О компании</a>
             </li>
             <li class="submenu__item menu-item">
               <a href="#">Архитектору и дизайнеру</a>
@@ -101,10 +99,10 @@
         </div>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">Акции</a>
+        <a href="./stocks.html">Акции</a>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">Контакты</a>
+        <a href="./contacts.html">Контакты</a>
       </li>
     </ul>
   </nav>
@@ -185,17 +183,33 @@
       <h1 class="catalog__title h2">Каталог</h1>
     </header>
     <div class="catalog__inner">
-      <div class="catalog__filter"></div>
+      <div class="catalog__navigation page-navigation">
+        <div class="page-navigation__inner">
+          <button class="chip chip_fill chip_link chip_close">Угловая</button>
+          <button class="chip chip_fill chip_link chip_close">Классический</button>
+          <button class="chip chip_fill chip_link chip_close">Белый</button>
+        </div>
+        <div class="page-navigation__actions">
+          <div class="page-navigation__item">
+            <button class="button button_text button_auto" data-filter-button>
+              <span class="d-block d-md-none">Фильтр</span>
+              <span class="button__icon button__icon_right icon icon-filter"></span>
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="catalog__items cards-grid">
         <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-1.avif" type="image/avif"><source srcset="./assets/images/projects/image-1.webp" type="image/webp"><img src="./assets/images/projects/image-1.jpg" alt="Кухня угловая VOLEBAUM BOSTON"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
+     <a href="#"
+      class="chip chip_fill chip_success">
+      45%</a> 
   </div>
   
   <div class="card__details">
@@ -207,7 +221,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -219,7 +233,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">Кухня угловая VOLEBAUM BOSTON</a>
+        <a href="./product.html">Кухня угловая VOLEBAUM BOSTON</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -230,16 +244,12 @@
 </div>
 
         <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-2.avif" type="image/avif"><source srcset="./assets/images/projects/image-2.webp" type="image/webp"><img src="./assets/images/projects/image-2.jpg" alt="МУНСТОУН"></picture>
     </div>
   </a>
   
-  <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
-  </div>
-  
   <div class="card__details">
     
     
@@ -249,7 +259,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -261,7 +271,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">МУНСТОУН</a>
+        <a href="./product.html">МУНСТОУН</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -272,14 +282,16 @@
 </div>
 
         <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-3.avif" type="image/avif"><source srcset="./assets/images/projects/image-3.webp" type="image/webp"><img src="./assets/images/projects/image-3.jpg" alt="БЕРКЛИ"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
+     <a href="#"
+      class="chip chip_fill ">
+      45%</a> 
   </div>
   
   <div class="card__details">
@@ -291,7 +303,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -303,7 +315,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">БЕРКЛИ</a>
+        <a href="./product.html">БЕРКЛИ</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -314,16 +326,12 @@
 </div>
 
         <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-4.avif" type="image/avif"><source srcset="./assets/images/projects/image-4.webp" type="image/webp"><img src="./assets/images/projects/image-4.jpg" alt="ТАЙГЕРВУД"></picture>
     </div>
   </a>
   
-  <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
-  </div>
-  
   <div class="card__details">
     
     
@@ -333,7 +341,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -345,7 +353,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">ТАЙГЕРВУД</a>
+        <a href="./product.html">ТАЙГЕРВУД</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -356,14 +364,18 @@
 </div>
 
         <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-5.avif" type="image/avif"><source srcset="./assets/images/projects/image-5.webp" type="image/webp"><img src="./assets/images/projects/image-5.jpg" alt="БРЮНЕТ"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
+     <a href="#"
+      class="chip chip_fill chip_warning">
+      45%</a>  <a href="#"
+      class="chip chip_fill chip_warning">
+      Только сейчас</a> 
   </div>
   
   <div class="card__details">
@@ -375,7 +387,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -387,7 +399,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">БРЮНЕТ</a>
+        <a href="./product.html">БРЮНЕТ</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -398,14 +410,16 @@
 </div>
 
         <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-6.avif" type="image/avif"><source srcset="./assets/images/projects/image-6.webp" type="image/webp"><img src="./assets/images/projects/image-6.jpg" alt="БАРИ '22"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
+     <a href="#"
+      class="chip chip_fill ">
+      45%</a> 
   </div>
   
   <div class="card__details">
@@ -417,7 +431,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -429,7 +443,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">БАРИ '22</a>
+        <a href="./product.html">БАРИ '22</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -440,14 +454,16 @@
 </div>
 
         <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-7.avif" type="image/avif"><source srcset="./assets/images/projects/image-7.webp" type="image/webp"><img src="./assets/images/projects/image-7.jpg" alt="КЛЕРМОН"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
+     <a href="#"
+      class="chip chip_fill chip_info">
+      45%</a> 
   </div>
   
   <div class="card__details">
@@ -459,7 +475,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -471,7 +487,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">КЛЕРМОН</a>
+        <a href="./product.html">КЛЕРМОН</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -482,14 +498,16 @@
 </div>
 
         <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-8.avif" type="image/avif"><source srcset="./assets/images/projects/image-8.webp" type="image/webp"><img src="./assets/images/projects/image-8.jpg" alt="ДУБЛИН"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
+     <a href="#"
+      class="chip chip_fill ">
+      45%</a> 
   </div>
   
   <div class="card__details">
@@ -501,7 +519,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -513,7 +531,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">ДУБЛИН</a>
+        <a href="./product.html">ДУБЛИН</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -524,14 +542,16 @@
 </div>
 
         <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-9.avif" type="image/avif"><source srcset="./assets/images/projects/image-9.webp" type="image/webp"><img src="./assets/images/projects/image-9.jpg" alt="ВАЛЕТТА"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
+     <a href="#"
+      class="chip chip_fill ">
+      45%</a> 
   </div>
   
   <div class="card__details">
@@ -543,7 +563,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -555,7 +575,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">ВАЛЕТТА</a>
+        <a href="./product.html">ВАЛЕТТА</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -566,14 +586,16 @@
 </div>
 
         <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-10.avif" type="image/avif"><source srcset="./assets/images/projects/image-10.webp" type="image/webp"><img src="./assets/images/projects/image-10.jpg" alt="САВОЙЯ"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
+     <a href="#"
+      class="chip chip_fill ">
+      45%</a> 
   </div>
   
   <div class="card__details">
@@ -585,7 +607,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -597,7 +619,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">САВОЙЯ</a>
+        <a href="./product.html">САВОЙЯ</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -608,14 +630,16 @@
 </div>
 
         <div class="card ">
-  <a href="#">
+  <a href="./product.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/image-11.avif" type="image/avif"><source srcset="./assets/images/projects/image-11.webp" type="image/webp"><img src="./assets/images/projects/image-11.jpg" alt="ЭНВЕР"></picture>
     </div>
   </a>
   
   <div class="card__chips card__chips_end">
-     <a href="#" class="card__chips-item">45%</a> 
+     <a href="#"
+      class="chip chip_fill ">
+      45%</a> 
   </div>
   
   <div class="card__details">
@@ -627,7 +651,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./catalog.html">Неоклассика</a>
           
           
 
@@ -639,7 +663,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">ЭНВЕР</a>
+        <a href="./product.html">ЭНВЕР</a>
       </h3>
       
        <div class="card__old-price">1575 руб за 1 м.п.</div> 
@@ -743,7 +767,7 @@
           </div>
         </div>
         <div class="credit-catalog__more">
-          <a href="#" class="button button_secondary button_transparent">Подробнее о рассрочке</a>
+          <a href="./credit.html" class="button button_secondary button_transparent">Подробнее о рассрочке</a>
         </div>
       </div>
     </div>
@@ -756,7 +780,7 @@
     </header>
     <div class="projects-short__inner">
       <div class="card ">
-  <a href="#">
+  <a href="./portfolio-single.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/complete-1.avif" type="image/avif"><source srcset="./assets/images/projects/complete-1.webp" type="image/webp"><img src="./assets/images/projects/complete-1.jpg" alt="Морской риф, 3"></picture>
     </div>
@@ -771,7 +795,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./portfolio.html">Неоклассика</a>
           
           
 
@@ -783,7 +807,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">Морской риф, 3</a>
+        <a href="./portfolio-single.html">Морской риф, 3</a>
       </h3>
       
       
@@ -794,7 +818,7 @@
 </div>
 
       <div class="card ">
-  <a href="#">
+  <a href="./portfolio-single.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/complete-2.avif" type="image/avif"><source srcset="./assets/images/projects/complete-2.webp" type="image/webp"><img src="./assets/images/projects/complete-2.jpg" alt="г. Колодищи, Бульвар Зеленой Гавани, 6,"></picture>
     </div>
@@ -809,7 +833,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./portfolio.html">Неоклассика</a>
           
           
 
@@ -821,7 +845,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">г. Колодищи, Бульвар Зеленой Гавани, 6,</a>
+        <a href="./portfolio-single.html">г. Колодищи, Бульвар Зеленой Гавани, 6,</a>
       </h3>
       
       
@@ -832,7 +856,7 @@
 </div>
 
       <div class="card ">
-  <a href="#">
+  <a href="./portfolio-single.html">
     <div class="card__image">
       <picture><source srcset="./assets/images/projects/complete-3.avif" type="image/avif"><source srcset="./assets/images/projects/complete-3.webp" type="image/webp"><img src="./assets/images/projects/complete-3.jpg" alt="д.Копище, Б.Райт, 14"></picture>
     </div>
@@ -847,7 +871,7 @@
         
          <a href="#">МДФ</a>
            <i>|</i> 
-          <a href="#">Неоклассика</a>
+          <a href="./portfolio.html">Неоклассика</a>
           
           
 
@@ -859,7 +883,7 @@
     <div class="card__row">
       
       <h3 class="card__title">
-        <a href="#">д.Копище, Б.Райт, 14</a>
+        <a href="./portfolio-single.html">д.Копище, Б.Райт, 14</a>
       </h3>
       
       
@@ -871,12 +895,12 @@
     </div>
     
     <div class="projects-short__more">
-      <a href="#" class="button">Смотреть портфолио</a>
+      <a href="./portfolio.html" class="button">Смотреть портфолио</a>
     </div>
     
   </div>
 </section>
-      <section class="section section_stocks-repeat stocks-repeat">
+      <section class="section section_normal stocks-repeat">
   <div class="container">
     <header class="section__header">
       <h2 class="title">Акции</h2>
@@ -898,7 +922,7 @@
       до 31.12
     </div>
     <div class="stock-card__more">
-      <a href="#">подробнее</a>
+      <a href="./stocks-single.html">подробнее</a>
     </div>
   </div>
 </div>
@@ -918,7 +942,7 @@
       
     </div>
     <div class="stock-card__more">
-      <a href="#">подробнее</a>
+      <a href="./stocks-single.html">подробнее</a>
     </div>
   </div>
 </div>
@@ -938,7 +962,7 @@
       до 31.12
     </div>
     <div class="stock-card__more">
-      <a href="#">подробнее</a>
+      <a href="./stocks-single.html">подробнее</a>
     </div>
   </div>
 </div>
@@ -958,7 +982,7 @@
       до 31.12
     </div>
     <div class="stock-card__more">
-      <a href="#">подробнее</a>
+      <a href="./stocks-single.html">подробнее</a>
     </div>
   </div>
 </div>
@@ -967,28 +991,35 @@
       </div>
 
       <div class="stocks-repeat__more">
-        <a href="#" class="button button_secondary">Смотреть больше</a>
+        <a href="./stocks.html" class="button button_secondary">Смотреть больше</a>
       </div>
     </div>
   </div>
 </section>
-      <section class="section section_calculation calculation">
-  <div class="calculation__background img-cover">
-    <picture><source srcset="./assets/images/common/calculation/background.avif" type="image/avif"><source srcset="./assets/images/common/calculation/background.webp" type="image/webp"><img src="./assets/images/common/calculation/background.jpg" alt="Рассчитать стоимость кухни"></picture>
-  </div>
-  <div class="container">
-    <div class="calculation__inner">
-      <form class="calculation__form form" id="calculation-form">
+      <section class="section">
+  <div class="calculation">
+    <div class="calculation__background img-cover">
+      <picture><source srcset="./assets/images/common/calculation/background.avif" type="image/avif"><source srcset="./assets/images/common/calculation/background.webp" type="image/webp"><img src="./assets/images/common/calculation/background.jpg" alt="Рассчитать стоимость кухни"></picture>
+    </div>
+    <div class="container">
+      <div class="calculation__inner">
+        <form class="calculation__form form" id="calculation-form">
   <div class="form__inner">
     <header class="form__header">
       <div class="field-box">
         <div class="field field_variant_1">
           <select class="custom-select field__input" name="material" data-select>
             <option value="" disabled selected hidden>Материал кухни</option>
-            <option value="value 1">Пункт 1</option>
-            <option value="value 2">Пункт 2</option>
-            <option value="value 3">Пункт 3</option>
-            <option value="value 4">Пункт 4</option>
+            <option value="value 1">Акрил</option>
+            <option value="value 2">Массив</option>
+            <option value="value 3">Пластик</option>
+            <option value="value 4">Крашенный МДФ</option>
+            <option value="value 5">Шпон</option>
+            <option value="value 6">ЛДСП</option>
+            <option value="value 7">Стекло</option>
+            <option value="value 8">Ламинированный МДФ</option>
+            <option value="value 9">Рамочный МДФ</option>
+            <option value="value 10">Пленочный МДФ</option>
           </select>
         </div>
         <div class="field-box__error"></div>
@@ -998,10 +1029,10 @@
         <div class="field field_variant_1">
           <select class="custom-select field__input" name="layout" data-select>
             <option value="" disabled selected hidden>Тип планировки</option>
-            <option value="value 1">Пункт 1</option>
-            <option value="value 2">Пункт 2</option>
-            <option value="value 3">Пункт 3</option>
-            <option value="value 4">Пункт 4</option>
+            <option value="value 1">Угловая</option>
+            <option value="value 2">Линейная</option>
+            <option value="value 3">П-образная</option>
+            <option value="value 4">С островом</option>
           </select>
         </div>
         <div class="field-box__error"></div>
@@ -1031,7 +1062,7 @@
       </div>
     </div>
 
-    <div class="field-box">
+    <div class="field-box field-box_nolight">
       <div class="field field_variant_2">
         <label class="checkbox">
           <input name="approve" type="checkbox" checked>
@@ -1080,9 +1111,10 @@
     </div>
   </div>
 </form>
-      <div class="calculation__meta">
-        <h2 class="calculation__title">Рассчитать стоимость кухни</h2>
-        <p>Введите свой номер телефона и мы предоставим вам расчет стоимости вашей кухни</p>
+        <div class="calculation__meta">
+          <h2 class="calculation__title">Рассчитать стоимость кухни</h2>
+          <p>Введите свой номер телефона и мы предоставим вам расчет стоимости вашей кухни</p>
+        </div>
       </div>
     </div>
   </div>
@@ -1143,7 +1175,7 @@
         <header class="salons-short__map-header">
           <div class="list-item">
             <span class="list-item__title">
-              <a href="#">3D тур по салонам</a>
+              <a href="https://test.360tour.by/sh_ku/" rel="noreferrer noopener nofollow">3D тур по салонам</a>
               <span class="icon icon-slider-next"></span>
             </span>
             <p class="list-item__text">Пройдитесь по нашим салонам не выходя из дома </p>
@@ -1151,8 +1183,6 @@
         </header>
         <div class="salons-short__viewport">
           <div class="map" id="map"></div>
-          <!-- <script charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adb7b444d8bfeb5a9e1bd36cd7c76cbc4ce1d3dfac685a04591610462b108e64b&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true&_v=20230927222016"></script> -->
         </div>
       </div>
     </div>
@@ -1162,16 +1192,16 @@
     <footer class="footer">
   <div class="container">
     <div class="footer__inner">
-      <a href="/" class="footer__logo">
+      <a href="./" class="footer__logo">
         <img src="./assets/images/logo.svg" alt="Логотип фирмы Шеф Кухни">
       </a>
       <ul class="footer__menu">
-        <li class="footer__menu-item footer__menu-item_active"><a href="#">Кухни</a></li>
+        <li class="footer__menu-item footer__menu-item_active"><a href="./catalog.html">Кухни</a></li>
         <li class="footer__menu-item"><a href="#">Корпусная мебель</a></li>
-        <li class="footer__menu-item"><a href="#">Портфолио</a></li>
-        <li class="footer__menu-item"><a href="#">О нас</a></li>
-        <li class="footer__menu-item"><a href="#">Акции</a></li>
-        <li class="footer__menu-item"><a href="#">Контакты</a></li>
+        <li class="footer__menu-item"><a href="./portfolio.html">Портфолио</a></li>
+        <li class="footer__menu-item"><a href="./company.html">О нас</a></li>
+        <li class="footer__menu-item"><a href="./stocks.html">Акции</a></li>
+        <li class="footer__menu-item"><a href="./contacts.html">Контакты</a></li>
       </ul>
       <div class="footer__communication communication">
         <div class="communication__inner">
@@ -1197,8 +1227,8 @@
 </ul>
       </div>
       <div class="footer__links">
-        <a href="#">Договор публичной оферты</a>
-        <a href="#">Политика конфиденциальности</a>
+        <a href="./agreement.html">Договор публичной оферты</a>
+        <a href="./privacy-policy.html">Политика конфиденциальности</a>
       </div>
       <div class="footer__address">
         <div class="addresses">
@@ -1236,6 +1266,195 @@
   </div>
 </footer>
   </div>
+  <div class="modal-content filter" data-filter-modal>
+  <header class="modal-content__header">
+    <h2 class="modal-content__title h3">Фильтр</h2>
+    <div class="modal-content__close" data-modal-close>
+      <span class="icon icon_small icon-close"></span>
+    </div>
+  </header>
+  <div class="modal-content__body filter__body">
+    <form action="" class="filter__form" id="filter-form">
+      <div class="filter__box" dropdown>
+        <div class="filter__box-header" dropdown-trigger>
+          <div class="filter__box-title">Тип планировки</div>
+          <div class="filter__box-icon">
+            <span class="icon icon-chevron"></span>
+          </div>
+        </div>
+        <div class="filter__box-body" dropdown-body>
+          <div class="filter__box-row">
+            <label class="checkbox">
+              <input name="approve" type="checkbox" checked>
+              <span class="checkbox__text">Угловая</span>
+              <span class="checkbox__icon"></span>
+            </label>
+          </div>
+
+          <div class="filter__box-row">
+            <label class="checkbox">
+              <input name="approve" type="checkbox">
+              <span class="checkbox__text">Линейная</span>
+              <span class="checkbox__icon"></span>
+            </label>
+          </div>
+
+          <div class="filter__box-row">
+            <label class="checkbox">
+              <input name="approve" type="checkbox">
+              <span class="checkbox__text">П-образная</span>
+              <span class="checkbox__icon"></span>
+            </label>
+          </div>
+
+          <div class="filter__box-row">
+            <label class="checkbox">
+              <input name="approve" type="checkbox">
+              <span class="checkbox__text">С островом</span>
+              <span class="checkbox__icon"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter__box" dropdown>
+        <div class="filter__box-header" dropdown-trigger>
+          <div class="filter__box-title">Стиль</div>
+          <div class="filter__box-icon">
+            <span class="icon icon-chevron"></span>
+          </div>
+        </div>
+        <div class="filter__box-body" dropdown-body>
+          <div class="filter__box-row">
+            <span>Тут будут инпуты</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter__box" dropdown>
+        <div class="filter__box-header" dropdown-trigger>
+          <div class="filter__box-title">Фабрика</div>
+          <div class="filter__box-icon">
+            <span class="icon icon-chevron"></span>
+          </div>
+        </div>
+        <div class="filter__box-body" dropdown-body>
+          <div class="filter__box-row">
+            <span>Тут будут инпуты</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter__box" dropdown>
+        <div class="filter__box-header" dropdown-trigger>
+          <div class="filter__box-title">Материал</div>
+          <div class="filter__box-icon">
+            <span class="icon icon-chevron"></span>
+          </div>
+        </div>
+        <div class="filter__box-body" dropdown-body>
+          <div class="filter__box-row">
+            <span>Тут будут инпуты</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter__box" dropdown>
+        <div class="filter__box-header" dropdown-trigger>
+          <div class="filter__box-title">Цена</div>
+          <div class="filter__box-icon">
+            <span class="icon icon-chevron"></span>
+          </div>
+        </div>
+        <div class="filter__box-body" dropdown-body>
+          <div class="filter__box-row">
+            <span>Тут будут инпуты</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter__box" dropdown>
+        <div class="filter__box-header" dropdown-trigger>
+          <div class="filter__box-title">По моделям ЗОВ</div>
+          <div class="filter__box-icon">
+            <span class="icon icon-chevron"></span>
+          </div>
+        </div>
+        <div class="filter__box-body" dropdown-body>
+          <div class="filter__box-row">
+            <span>Тут будут инпуты</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter__box" dropdown>
+        <div class="filter__box-header" dropdown-trigger>
+          <div class="filter__box-title">По моделям GEOSIDEAL</div>
+          <div class="filter__box-icon">
+            <span class="icon icon-chevron"></span>
+          </div>
+        </div>
+        <div class="filter__box-body" dropdown-body>
+          <div class="filter__box-row">
+            <span>Тут будут инпуты</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter__box" dropdown>
+        <div class="filter__box-header" dropdown-trigger>
+          <div class="filter__box-title">По моделям VOGELBAUM</div>
+          <div class="filter__box-icon">
+            <span class="icon icon-chevron"></span>
+          </div>
+        </div>
+        <div class="filter__box-body" dropdown-body>
+          <div class="filter__box-row">
+            <span>Тут будут инпуты</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter__box" dropdown>
+        <div class="filter__box-header" dropdown-trigger>
+          <div class="filter__box-title">Цвет</div>
+          <div class="filter__box-icon">
+            <span class="icon icon-chevron"></span>
+          </div>
+        </div>
+        <div class="filter__box-body" dropdown-body>
+          <div class="filter__box-row">
+            <span>Тут будут инпуты</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter__box" dropdown>
+        <div class="filter__box-header" dropdown-trigger>
+          <div class="filter__box-title">Дополнительные</div>
+          <div class="filter__box-icon">
+            <span class="icon icon-chevron"></span>
+          </div>
+        </div>
+        <div class="filter__box-body" dropdown-body>
+          <div class="filter__box-row">
+            <span>Тут будут инпуты</span>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+  <footer class="modal-content__footer">
+    <button class="button button_small button_full button_variant_2" filter-submit>
+      Применить
+    </button>
+
+    <button class="button button_small button_text" filter-reset>
+      Сбросить
+    </button>
+  </footer>
+</div>
 </body>
 
 </html>

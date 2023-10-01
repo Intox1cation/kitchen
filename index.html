@@ -33,15 +33,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20230927222016"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20231001221506"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/libs.css?_v=20230927222016">
-  <link rel="stylesheet" href="./assets/css/style.css?_v=20230927222016">
+  <link rel="stylesheet" href="./assets/css/libs.css?_v=20231001221506">
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20231001221506">
 
-
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=8af7f125-89a4-425d-b14a-f9f752b36720&lang=ru_RU&_v=20230927222016"></script>
-  <script src="./assets/js/bundle.min.js?_v=20230927222016" defer></script>
-
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8af7f125-89a4-425d-b14a-f9f752b36720&lang=ru_RU&_v=20231001221506"></script>
+  <script src="./assets/js/bundle.min.js?_v=20231001221506" defer></script>
 </head>
 
 <body>
@@ -50,7 +48,7 @@
     <header class="header header_sticky" id="header">
   <div class="container">
     <div class="header__inner">
-      <a href="#" class="header__logo">
+      <a href="./" class="header__logo">
         <img src="./assets/images/logo.svg" alt="Логотип фирмы Шеф Кухни">
       </a>
       <div class="header__navigation" data-mobile-container="main">
@@ -63,17 +61,17 @@
   <nav class="menu__inner">
     <ul class="menu__list">
       <li class="menu__item menu-item">
-        <a href="#">Кухни</a>
+        <a href="./catalog.html">Кухни</a>
         <div class="menu__child submenu menu-child">
           <ul class="submenu__list">
             <li class="submenu__item menu-item">
-              <a href="#">Современный стиль</a>
+              <a href="./catalog.html">Современный стиль</a>
             </li>
             <li class="submenu__item menu-item">
-              <a href="#">Неоклассический стиль</a>
+              <a href="./catalog.html">Неоклассический стиль</a>
             </li>
             <li class="submenu__item menu-item">
-              <a href="#">Классический стиль</a>
+              <a href="./catalog.html">Классический стиль</a>
             </li>
           </ul>
         </div>
@@ -82,14 +80,14 @@
         <a href="#">Корпусная мебель</a>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">Портфолио</a>
+        <a href="./portfolio.html">Портфолио</a>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">О нас</a>
+        <a href="./company.html">О нас</a>
         <div class="menu__child submenu menu-child">
           <ul class="submenu__list">
             <li class="submenu__item menu-item">
-              <a href="#">О компании</a>
+              <a href="./company.html">О компании</a>
             </li>
             <li class="submenu__item menu-item">
               <a href="#">Архитектору и дизайнеру</a>
@@ -101,10 +99,10 @@
         </div>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">Акции</a>
+        <a href="./stocks.html">Акции</a>
       </li>
       <li class="menu__item menu-item">
-        <a href="#">Контакты</a>
+        <a href="./contacts.html">Контакты</a>
       </li>
     </ul>
   </nav>
@@ -161,39 +159,23 @@
   </div>
 </header>
     <main class="main">
-
-      <!-- <div id="map"></div> -->
       <section class="section hero">
   <div class="hero__background">
     <div class="hero-background-slider swiper">
       <div class="hero-background-slider__wrapper swiper-wrapper">
         <div class="hero-background-slider__slide hero-background-slide swiper-slide">
-          <picture>
-            <source srcset="./assets/images/slides/hero/kitchen-1_2x.avif" type="image/avif">
-            <source srcset="./assets/images/slides/hero/kitchen-1_2x.webp" type="image/webp">
-            <img loading="lazy" src="./assets/images/slides/hero/kitchen-1_2x.jpg"
-              alt="Новогодние скидки до 45% на кухни месяца до 31.12">
-          </picture>
+          <picture><source srcset="./assets/images/slides/hero/kitchen-1_2x.avif" type="image/avif"><source srcset="./assets/images/slides/hero/kitchen-1_2x.webp" type="image/webp"><img src="./assets/images/slides/hero/kitchen-1_2x.jpg" alt="Новогодние скидки до 45% на кухни месяца до 31.12"></picture>
+        </div>
+
+        <div class="hero-background-slider__slide hero-background-slide swiper-slide">
+          <img loading="lazy" src="./assets/images/slides/hero/kitchen-2_2x.jpg"
+            alt="Новогодние скидки до 45% на кухни месяца до 31.12">
           <div class="swiper-lazy-preloader"></div>
         </div>
 
         <div class="hero-background-slider__slide hero-background-slide swiper-slide">
-          <picture>
-            <source srcset="./assets/images/slides/hero/kitchen-2_2x.avif" type="image/avif">
-            <source srcset="./assets/images/slides/hero/kitchen-2_2x.webp" type="image/webp">
-            <img loading="lazy" src="./assets/images/slides/hero/kitchen-1_2x.jpg"
-              alt="Новогодние скидки до 45% на кухни месяца до 31.12">
-          </picture>
-          <div class="swiper-lazy-preloader"></div>
-        </div>
-
-        <div class="hero-background-slider__slide hero-background-slide swiper-slide">
-          <picture>
-            <source srcset="./assets/images/slides/hero/kitchen-3_2x.avif" type="image/avif">
-            <source srcset="./assets/images/slides/hero/kitchen-3_2x.webp" type="image/webp">
-            <img loading="lazy" src="./assets/images/slides/hero/kitchen-1_1x.jpg"
-              alt="Новогодние скидки до 45% на кухни месяца до 31.12">
-          </picture>
+          <img loading="lazy" src="./assets/images/slides/hero/kitchen-3_2x.jpg"
+            alt="Новогодние скидки до 45% на кухни месяца до 31.12">
           <div class="swiper-lazy-preloader"></div>
         </div>
       </div>
@@ -205,7 +187,7 @@
       <div class="hero__content">
         <h1 class="hero__title">Шеф Кухни</h1>
         <p class="hero__caption text text_5">Не просто мебель, а пространство объединяющее всё</p>
-        <a href="#" class="hero__button button">В Каталог</a>
+        <a href="./catalog.html" class="hero__button button">В Каталог</a>
       </div>
 
       <div class="hero__description">
@@ -215,21 +197,21 @@
               <p class="text text_1">Новогодние скидки</p>
               <p class="hero-description-slide__title"><b>до 45%</b></p>
               <p class="text text_1">на кухни месяца до 31.12</p>
-              <a href="#" class="hero-description-slide__link text text_2">Подробнее</a>
+              <a href="./stocks-single.html" class="hero-description-slide__link text text_2">Подробнее</a>
             </div>
 
             <div class="hero-description-slider__slide hero-description-slide swiper-slide">
               <p class="text text_1">Новогодние скидки</p>
               <p class="hero-description-slide__title"><b>до 24%</b></p>
               <p class="text text_1">на кухни месяца до 31.12</p>
-              <a href="#" class="hero-description-slide__link text text_2">Подробнее</a>
+              <a href="./stocks-single.html" class="hero-description-slide__link text text_2">Подробнее</a>
             </div>
 
             <div class="hero-description-slider__slide hero-description-slide swiper-slide">
               <p class="text text_1">Новогодние скидки</p>
               <p class="hero-description-slide__title"><b>до 33%</b></p>
               <p class="text text_1">на кухни месяца до 31.12</p>
-              <a href="#" class="hero-description-slide__link text text_2">Подробнее</a>
+              <a href="./stocks-single.html" class="hero-description-slide__link text text_2">Подробнее</a>
             </div>
           </div>
           <div class="hero-description-slider__dots"></div>
@@ -238,7 +220,7 @@
     </div>
   </div>
 </section>
-      <section class="section section_about-us about-us">
+      <section class="section section_big about-us">
   <div class="container">
     <div class="about-us__inner">
       <div class="about-us__content">
@@ -253,7 +235,7 @@
             услуг.
           </p>
         </div>
-        <a href="#">подробнее</a>
+        <a href="./company.html">подробнее</a>
       </div>
       <div class="about-us__counters">
         <div class="about-us__counter">
@@ -283,7 +265,7 @@
     </div>
   </div>
 </section>
-      <section class="section section_quiz quiz">
+      <section class="section section_big quiz">
   <div class="container">
     <div class="quiz__inner">
       <h2 class="quiz__title title">Какая мебель вам необходима?</h2>
@@ -292,101 +274,94 @@
     </div>
   </div>
 </section>
-      <section class="section section_styles styles">
+      <section class="section section_big styles">
   <div class="container">
-    <div class="styles__inner">
+    <div class="styles__inner" data-viewer>
       <div class="styles-item">
-        <div class="styles-item__image">
-          <img loading="lazy" src="./assets/images/system/style_1.jpg"
-            srcset="./assets/images/system/style_1_400w.jpg 900w, ./assets/images/system/style_1_600w.jpg 1400w, ./assets/images/system/style_1.jpg"
-            alt="Современный стиль | Шеф Кухни">
+        <div class="styles-item__image img-cover">
+          <picture><source srcset="./assets/images/system/style_1.avif" type="image/avif"><source srcset="./assets/images/system/style_1.webp" type="image/webp"><img loading="lazy" src="./assets/images/system/style_1.jpg" alt="Современный стиль | Шеф Кухни"></picture>
         </div>
         <div class="styles-item__body">
           <h2 class="styles-item__title h3">Современный стиль</h2>
           <div class="styles-item__text text text_4">Мы гарантируем качество материалов и сборки кухонь и подтверждаем
             это длительными гарантиями.</div>
-          <a href="#" class="button">Найти свою кухню</a>
+          <a href="./catalog.html" class="button">Найти свою кухню</a>
         </div>
       </div>
 
       <div class="styles-item">
-        <div class="styles-item__image">
-          <img loading="lazy" src="./assets/images/system/style_1.jpg"
-            srcset="./assets/images/system/style_2_400w.jpg 900w, ./assets/images/system/style_2_600w.jpg 1400w, ./assets/images/system/style_2.jpg"
-            alt="Неоклассический стиль | Шеф Кухни">
+        <div class="styles-item__image img-cover">
+          <picture><source srcset="./assets/images/system/style_2.avif" type="image/avif"><source srcset="./assets/images/system/style_2.webp" type="image/webp"><img loading="lazy" src="./assets/images/system/style_2.jpg" alt="Неоклассический стиль | Шеф Кухни"></picture>
         </div>
         <div class="styles-item__body">
           <h2 class="styles-item__title h3">Неоклассический стиль</h2>
           <div class="styles-item__text text text_4">Мы гарантируем качество материалов и сборки кухонь и подтверждаем
             это длительными гарантиями.</div>
-          <a href="#" class="button">Найти свою кухню</a>
+          <a href="./catalog.html" class="button">Найти свою кухню</a>
         </div>
       </div>
 
       <div class="styles-item">
-        <div class="styles-item__image">
-          <img loading="lazy" src="./assets/images/system/style_1.jpg"
-            srcset="./assets/images/system/style_3_400w.jpg 900w, ./assets/images/system/style_3_600w.jpg 1400w, ./assets/images/system/style_3.jpg"
-            alt="Классический стиль | Шеф Кухни">
+        <div class="styles-item__image img-cover">
+          <picture><source srcset="./assets/images/system/style_3.avif" type="image/avif"><source srcset="./assets/images/system/style_3.webp" type="image/webp"><img loading="lazy" src="./assets/images/system/style_3.jpg" alt="Классический стиль | Шеф Кухни"></picture>
         </div>
         <div class="styles-item__body">
           <h2 class="styles-item__title h3">Классический стиль</h2>
           <div class="styles-item__text text text_4">Мы гарантируем качество материалов и сборки кухонь и подтверждаем
             это длительными гарантиями.</div>
-          <a href="#" class="button">Найти свою кухню</a>
+          <a href="./catalog.html" class="button">Найти свою кухню</a>
         </div>
       </div>
     </div>
   </div>
 </section>
-      <section class="section section_consultation consultation">
-  <div class="consultation__background img-cover">
-    <picture>
-      <source srcset="./assets/images/system/free-consulting.avif" type="image/avif">
-      <source srcset="./assets/images/system/free-consulting.webp" type="image/webp">
-      <img src="./assets/images/system/free-consulting.jpg" alt="Бесплатная консультация от профеcсиональных дизайнеров">
-    </picture>
-  </div>
-  <div class="container">
-    <div class="consultation__inner">
-      <h2 class="consultation__title title h3">Бесплатная консультация</h2>
-      <p class="consultation__description">Запишитесь на бесплатную консультацию от профеcсиональных дизайнеров в наших
-        салонах и получите:</p>
-      <div class="consultation__content">
-        <ol class="consultation__list">
-          <li>3D проект вашей кухни</li>
-          <li>точную стоимость вашего проекта в разных конфигурациях</li>
-          <li>рекомендации по выбору фасадов</li>
-          <li>советы по компановке кухни с точки зрения эграномики</li>
-          <li>помощь в выборе цветовых решений</li>
-          <li>актуальную информацию о трендах в 2023 году</li>
-        </ol>
-        <form class="consultation__form consultation-form" id="consultation-form">
-          <div class="consultation-form__item field-box">
-            <div class="field">
-              <input type="text" class="field__input" name="name" placeholder="Имя *">
+      <section class="section">
+  <div class="consultation">
+    <div class="consultation__background img-cover">
+      <picture><source srcset="./assets/images/system/free-consulting.avif" type="image/avif"><source srcset="./assets/images/system/free-consulting.webp" type="image/webp"><img src="./assets/images/system/free-consulting.jpg" alt="Бесплатная консультация от профеcсиональных дизайнеров"></picture>
+    </div>
+    <div class="container">
+      <div class="consultation__inner">
+        <h2 class="consultation__title title h3">Бесплатная консультация</h2>
+        <p class="consultation__description">Запишитесь на бесплатную консультацию от профеcсиональных дизайнеров в
+          наших
+          салонах и получите:</p>
+        <div class="consultation__content">
+          <ol class="consultation__list">
+            <li>3D проект вашей кухни</li>
+            <li>точную стоимость вашего проекта в разных конфигурациях</li>
+            <li>рекомендации по выбору фасадов</li>
+            <li>советы по компановке кухни с точки зрения эграномики</li>
+            <li>помощь в выборе цветовых решений</li>
+            <li>актуальную информацию о трендах в 2023 году</li>
+          </ol>
+          <form class="consultation__form consultation-form" id="consultation-form">
+            <div class="consultation-form__item field-box">
+              <div class="field">
+                <input type="text" class="field__input" name="name" placeholder="Имя *">
+              </div>
+              <div class="field-box__error"></div>
             </div>
-            <div class="field-box__error"></div>
-          </div>
 
-          <div class="consultation-form__item field-box">
-            <div class="field">
-              <input type="text" class="field__input" name="phone" placeholder="Номер телефона *">
+            <div class="consultation-form__item field-box">
+              <div class="field">
+                <input type="text" class="field__input" name="phone" placeholder="Номер телефона *">
+              </div>
+              <div class="field-box__error"></div>
             </div>
-            <div class="field-box__error"></div>
-          </div>
 
-          <p class="consultation-form__approve">Ваши данные под защитой и обрабатываются согласно политике
-            конфидициальности</p>
-          <div class="consultation-form__submit">
-            <button class="button" type="submit">Записаться на консультацию</button>
-          </div>
-        </form>
+            <p class="consultation-form__approve">Ваши данные под защитой и обрабатываются согласно политике
+              конфидициальности</p>
+            <div class="consultation-form__submit">
+              <button class="button" type="submit">Записаться на консультацию</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </section>
-      <section class="section section_popular popular">
+      <section class="section section_big popular">
   <div class="container">
     <h2 class="popular__title title">Самые популярные кухни</h2>
   </div>
@@ -394,14 +369,14 @@
     <div class="popular__slider popular-slider swiper">
       <div class="popular-slider__wrapper swiper-wrapper">
         <div class="popular-slider__slide popular-slide swiper-slide">
-  <div class="portfolio-card">
+  <div class="portfolio-card portfolio-card_variant_1">
     <div class="portfolio-card__image img-cover">
       <picture><source srcset="./assets/images/slides/popular/image-1.avif" type="image/avif"><source srcset="./assets/images/slides/popular/image-1.webp" type="image/webp"><img loading="lazy" src="./assets/images/slides/popular/image-1.jpg" alt=""></picture>
       <div class="swiper-lazy-preloader"></div>
     </div>
     <div class="portfolio-card__body">
       <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
-      <a href="#" class="portfolio-card__link text text_3">
+      <a href="./portfolio-single.html" class="portfolio-card__link text text_3">
         Подробнее
         <span class="icon icon_big icon-slider-next"></span>
       </a>
@@ -410,14 +385,14 @@
 </div>
 
         <div class="popular-slider__slide popular-slide swiper-slide">
-  <div class="portfolio-card">
+  <div class="portfolio-card portfolio-card_variant_1">
     <div class="portfolio-card__image img-cover">
       <picture><source srcset="./assets/images/slides/popular/image-2.avif" type="image/avif"><source srcset="./assets/images/slides/popular/image-2.webp" type="image/webp"><img loading="lazy" src="./assets/images/slides/popular/image-2.jpg" alt=""></picture>
       <div class="swiper-lazy-preloader"></div>
     </div>
     <div class="portfolio-card__body">
       <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
-      <a href="#" class="portfolio-card__link text text_3">
+      <a href="./portfolio-single.html" class="portfolio-card__link text text_3">
         Подробнее
         <span class="icon icon_big icon-slider-next"></span>
       </a>
@@ -426,14 +401,14 @@
 </div>
 
         <div class="popular-slider__slide popular-slide swiper-slide">
-  <div class="portfolio-card">
+  <div class="portfolio-card portfolio-card_variant_1">
     <div class="portfolio-card__image img-cover">
       <picture><source srcset="./assets/images/slides/popular/image-1.avif" type="image/avif"><source srcset="./assets/images/slides/popular/image-1.webp" type="image/webp"><img loading="lazy" src="./assets/images/slides/popular/image-1.jpg" alt=""></picture>
       <div class="swiper-lazy-preloader"></div>
     </div>
     <div class="portfolio-card__body">
       <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
-      <a href="#" class="portfolio-card__link text text_3">
+      <a href="./portfolio-single.html" class="portfolio-card__link text text_3">
         Подробнее
         <span class="icon icon_big icon-slider-next"></span>
       </a>
@@ -442,14 +417,14 @@
 </div>
 
         <div class="popular-slider__slide popular-slide swiper-slide">
-  <div class="portfolio-card">
+  <div class="portfolio-card portfolio-card_variant_1">
     <div class="portfolio-card__image img-cover">
       <picture><source srcset="./assets/images/slides/popular/image-2.avif" type="image/avif"><source srcset="./assets/images/slides/popular/image-2.webp" type="image/webp"><img loading="lazy" src="./assets/images/slides/popular/image-2.jpg" alt=""></picture>
       <div class="swiper-lazy-preloader"></div>
     </div>
     <div class="portfolio-card__body">
       <h3 class="portfolio-card__title">Мстиславца 18, кв 10</h3>
-      <a href="#" class="portfolio-card__link text text_3">
+      <a href="./portfolio-single.html" class="portfolio-card__link text text_3">
         Подробнее
         <span class="icon icon_big icon-slider-next"></span>
       </a>
@@ -470,47 +445,39 @@
 
     <div class="container">
       <div class="popular__more">
-        <a href="#" class="button">Смотреть портфолио</a>
+        <a href="./portfolio.html" class="button">Смотреть портфолио</a>
       </div>
     </div>
   </div>
 </section>
-      <section class="section section_credit-main credit-main">
-  <div class="container">
-    <div class="credit-main__inner">
-      <div class="credit-main__images">
-        <div class="credit-main__kitchen img-cover">
-          <picture>
-            <source
-              srcset="./assets/images/system/credit_background_400w.avif 600w, ./assets/images/system/credit_background_600w.avif 1400w, ./assets/images/system/credit_background.avif"
-              type="image/avif">
-            <source
-              srcset="./assets/images/system/credit_background_400w.webp 600w, ./assets/images/system/credit_background_600w.webp 1400w, ./assets/images/system/credit_background.webp"
-              type="image/webp">
-            <img src="./assets/images/system/credit_background.jpg"
-              srcset="./assets/images/system/credit_background_400w.jpg 600w, ./assets/images/system/credit_background_600w.jpg 1400w, ./assets/images/system/credit_background.jpg"
-              alt="Информация про рассрочку и кредит">
-          </picture>
-        </div>
-        <div class="credit-main__cards">
-          <div class="credit-main__card credit-main__card_1" data-parallax data-speed-x="1.4" data-speed-y="1.2">
-            <picture><source srcset="./assets/images/system/card-mtb.avif" type="image/avif"><source srcset="./assets/images/system/card-mtb.webp" type="image/webp"><img src="./assets/images/system/card-mtb.png" alt="Карта рассрочки от МТБанк"></picture>
+      <section class="section section_credit-main">
+  <div class="credit-main">
+    <div class="container">
+      <div class="credit-main__inner">
+        <div class="credit-main__images">
+          <div class="credit-main__kitchen img-cover">
+            <picture><source srcset="./assets/images/system/credit_background.avif" type="image/avif"><source srcset="./assets/images/system/credit_background.webp" type="image/webp"><img src="./assets/images/system/credit_background.jpg" alt="Информация про рассрочку и кредит"></picture>
           </div>
-          <div class="credit-main__card credit-main__card_2" data-parallax data-speed-x="-1.3" data-speed-y="-1.1">
-            <picture><source srcset="./assets/images/system/card-belgaz.avif" type="image/avif"><source srcset="./assets/images/system/card-belgaz.webp" type="image/webp"><img src="./assets/images/system/card-belgaz.png" alt="Карта покупок от Белгазпромбанка"></picture>
+          <div class="credit-main__cards">
+            <div class="credit-main__card credit-main__card_1" data-parallax data-speed-x="1.4" data-speed-y="1.2">
+              <picture><source srcset="./assets/images/system/card-mtb.avif" type="image/avif"><source srcset="./assets/images/system/card-mtb.webp" type="image/webp"><img src="./assets/images/system/card-mtb.png" alt="Карта рассрочки от МТБанк"></picture>
+            </div>
+            <div class="credit-main__card credit-main__card_2" data-parallax data-speed-x="-1.3" data-speed-y="-1.1">
+              <picture><source srcset="./assets/images/system/card-belgaz.avif" type="image/avif"><source srcset="./assets/images/system/card-belgaz.webp" type="image/webp"><img src="./assets/images/system/card-belgaz.png" alt="Карта покупок от Белгазпромбанка"></picture>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="credit-main__body">
-        <h2 class="credit-main__title h3">Про рассрочку и кредит</h2>
-        <p class="credit-main__text">Подробнее ...Качество и комфорт, стиль и функциональность, надёжность и уют — всё
-          это выгодно сочетается в кухнях, которые мы реализуем</p>
-        <a href="#" class="button button_contrast">Смотреть больше</a>
+        <div class="credit-main__body">
+          <h2 class="credit-main__title h3">Про рассрочку и кредит</h2>
+          <p class="credit-main__text">Подробнее ...Качество и комфорт, стиль и функциональность, надёжность и уют — всё
+            это выгодно сочетается в кухнях, которые мы реализуем</p>
+          <a href="./credit.html" class="button button_contrast">Смотреть больше</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
-      <section class="section section_presentation presentation">
+      <section class="section section_big presentation">
   <div class="container">
     <div class="presentation__inner">
       <div class="presentation__description">
@@ -519,7 +486,7 @@
           сочетается в кухнях, которые мы реализуем</p>
       </div>
       <div class="presentation__more">
-        <a href="#" class="button">Смотреть больше</a>
+        <a href="./catalog.html" class="button">Смотреть больше</a>
       </div>
       <div class="presentation__video">
         <div
@@ -534,7 +501,7 @@
     </div>
   </div>
 </section>
-      <section class="section section_stocks-main stocks-main">
+      <section class="section section_normal stocks-main">
   <div class="container">
     <h2 class="stocks-main__title title">Акции</h2>
     <div class="stocks-main__inner">
@@ -554,7 +521,7 @@
       до 31.12
     </div>
     <div class="stock-card__more">
-      <a href="#">подробнее</a>
+      <a href="./stocks-single.html">подробнее</a>
     </div>
   </div>
 </div>
@@ -574,7 +541,7 @@
       
     </div>
     <div class="stock-card__more">
-      <a href="#">подробнее</a>
+      <a href="./stocks-single.html">подробнее</a>
     </div>
   </div>
 </div>
@@ -594,7 +561,7 @@
       до 31.12
     </div>
     <div class="stock-card__more">
-      <a href="#">подробнее</a>
+      <a href="./stocks-single.html">подробнее</a>
     </div>
   </div>
 </div>
@@ -603,17 +570,17 @@
       </div>
 
       <div class="stocks-main__more d-none d-md-flex">
-        <a href="#" class="button button_secondary">Смотреть больше</a>
+        <a href="./stocks.html" class="button button_secondary">Смотреть больше</a>
       </div>
     </div>
   </div>
 </section>
-      <section class="section section_why-us why-us">
+      <section class="section section_normal why-us" data-viewer>
   <div class="container">
     <div class="why-us__inner">
       <h2 class="why-us__title title">Почему мы?</h2>
       <div class="why-us__image-wrapper">
-        <div class="why-us__image img-cover">
+        <div class="why-us__image img-cover img-cover_hover">
           <picture><source srcset="./assets/images/common/why-us/background.avif" type="image/avif"><source srcset="./assets/images/common/why-us/background.webp" type="image/webp"><img src="./assets/images/common/why-us/background.jpg" alt="Почему мы?"></picture>
         </div>
       </div>
@@ -643,15 +610,15 @@
     </div>
   </div>
 </section>
-      <section class="section section_process process">
+      <section class="section section_normal process">
   <div class="container">
     <h2 class="process__title title">Процесс</h2>
     <div class="process__inner" data-viewer>
       <div class="process__images">
-        <div class="process__image img-zoom">
+        <div class="process__image img-cover img-cover_hover">
           <picture><source srcset="./assets/images/common/process/image-1.avif" type="image/avif"><source srcset="./assets/images/common/process/image-1.webp" type="image/webp"><img loading="lazy" src="./assets/images/common/process/image-1.jpg" alt="Процесс фото 1"></picture>
         </div>
-        <div class="process__image img-zoom d-none d-sm-none d-lg-block">
+        <div class="process__image img-cover img-cover_hover d-none d-sm-none d-lg-block">
           <picture><source srcset="./assets/images/common/process/image-2.avif" type="image/avif"><source srcset="./assets/images/common/process/image-2.webp" type="image/webp"><img loading="lazy" src="./assets/images/common/process/image-2.jpg" alt="Процесс фото 2"></picture>
         </div>
       </div>
@@ -683,23 +650,30 @@
     </div>
   </div>
 </section>
-      <section class="section section_calculation calculation">
-  <div class="calculation__background img-cover">
-    <picture><source srcset="./assets/images/common/calculation/background.avif" type="image/avif"><source srcset="./assets/images/common/calculation/background.webp" type="image/webp"><img src="./assets/images/common/calculation/background.jpg" alt="Рассчитать стоимость кухни"></picture>
-  </div>
-  <div class="container">
-    <div class="calculation__inner">
-      <form class="calculation__form form" id="calculation-form">
+      <section class="section">
+  <div class="calculation">
+    <div class="calculation__background img-cover">
+      <picture><source srcset="./assets/images/common/calculation/background.avif" type="image/avif"><source srcset="./assets/images/common/calculation/background.webp" type="image/webp"><img src="./assets/images/common/calculation/background.jpg" alt="Рассчитать стоимость кухни"></picture>
+    </div>
+    <div class="container">
+      <div class="calculation__inner">
+        <form class="calculation__form form" id="calculation-form">
   <div class="form__inner">
     <header class="form__header">
       <div class="field-box">
         <div class="field field_variant_1">
           <select class="custom-select field__input" name="material" data-select>
             <option value="" disabled selected hidden>Материал кухни</option>
-            <option value="value 1">Пункт 1</option>
-            <option value="value 2">Пункт 2</option>
-            <option value="value 3">Пункт 3</option>
-            <option value="value 4">Пункт 4</option>
+            <option value="value 1">Акрил</option>
+            <option value="value 2">Массив</option>
+            <option value="value 3">Пластик</option>
+            <option value="value 4">Крашенный МДФ</option>
+            <option value="value 5">Шпон</option>
+            <option value="value 6">ЛДСП</option>
+            <option value="value 7">Стекло</option>
+            <option value="value 8">Ламинированный МДФ</option>
+            <option value="value 9">Рамочный МДФ</option>
+            <option value="value 10">Пленочный МДФ</option>
           </select>
         </div>
         <div class="field-box__error"></div>
@@ -709,10 +683,10 @@
         <div class="field field_variant_1">
           <select class="custom-select field__input" name="layout" data-select>
             <option value="" disabled selected hidden>Тип планировки</option>
-            <option value="value 1">Пункт 1</option>
-            <option value="value 2">Пункт 2</option>
-            <option value="value 3">Пункт 3</option>
-            <option value="value 4">Пункт 4</option>
+            <option value="value 1">Угловая</option>
+            <option value="value 2">Линейная</option>
+            <option value="value 3">П-образная</option>
+            <option value="value 4">С островом</option>
           </select>
         </div>
         <div class="field-box__error"></div>
@@ -742,7 +716,7 @@
       </div>
     </div>
 
-    <div class="field-box">
+    <div class="field-box field-box_nolight">
       <div class="field field_variant_2">
         <label class="checkbox">
           <input name="approve" type="checkbox" checked>
@@ -791,21 +765,21 @@
     </div>
   </div>
 </form>
-      <div class="calculation__meta">
-        <h2 class="calculation__title">Рассчитать стоимость кухни</h2>
-        <p>Введите свой номер телефона и мы предоставим вам расчет стоимости вашей кухни</p>
+        <div class="calculation__meta">
+          <h2 class="calculation__title">Рассчитать стоимость кухни</h2>
+          <p>Введите свой номер телефона и мы предоставим вам расчет стоимости вашей кухни</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
-      <div class="section section_about-all about-all">
+      <div class="section section_normal about-all">
   <div class="container">
     <div class="about-all__inner">
-      <a href="#">
+      <a href="./catalog.html">
         <div class="about-all__card about-all-card">
           <div class="about-all-card__image">
-            <img src="./assets/images/common/about/image-1.jpg"
-              srcset="./assets/images/common/about/image-1.jpg 1x, ./assets/images/common/about/image-1_2x.jpg 2x" alt="Наши кухни">
+            <picture><source srcset="./assets/images/common/about/image-1.avif" type="image/avif"><source srcset="./assets/images/common/about/image-1.webp" type="image/webp"><img src="./assets/images/common/about/image-1.jpg" alt="Наши кухни"></picture>
           </div>
           <p class="about-all-card__title text text_1">Наши кухни</p>
           <p class="about-all-card__text">Свяжемся с Вами в течении 30 минут. Выясним все Ваши пожелания. Подскажем
@@ -813,11 +787,10 @@
         </div>
       </a>
 
-      <a href="#">
+      <a href="./catalog.html">
         <div class="about-all__card about-all-card">
           <div class="about-all-card__image">
-            <img src="./assets/images/common/about/image-2.jpg"
-              srcset="./assets/images/common/about/image-2.jpg 1x, ./assets/images/common/about/image-2_2x.jpg 2x" alt="Наши салоны">
+            <picture><source srcset="./assets/images/common/about/image-2.avif" type="image/avif"><source srcset="./assets/images/common/about/image-2.webp" type="image/webp"><img src="./assets/images/common/about/image-2.jpg" alt="Наши салоны"></picture>
           </div>
           <p class="about-all-card__title text text_1">Наши салоны</p>
           <p class="about-all-card__text">Свяжемся с Вами в течении 30 минут. Выясним все Ваши пожелания. Подскажем
@@ -825,11 +798,10 @@
         </div>
       </a>
 
-      <a href="#">
+      <a href="./catalog.html">
         <div class="about-all__card about-all-card">
           <div class="about-all-card__image">
-            <img src="./assets/images/common/about/image-3.jpg"
-              srcset="./assets/images/common/about/image-3.jpg 1x, ./assets/images/common/about/image-3_2x.jpg 2x" alt="Наша команда">
+            <picture><source srcset="./assets/images/common/about/image-3.avif" type="image/avif"><source srcset="./assets/images/common/about/image-3.webp" type="image/webp"><img src="./assets/images/common/about/image-3.jpg" alt="Наша команда"></picture>
           </div>
           <p class="about-all-card__title text text_1">Наша команда</p>
           <p class="about-all-card__text">Свяжемся с Вами в течении 30 минут. Выясним все Ваши пожелания. Подскажем
@@ -839,7 +811,7 @@
     </div>
   </div>
 </div>
-      <section class="section section_customers-review customers-review">
+      <section class="section section_small customers-review">
   <div class="container">
     <h2 class="customers-review__title title">Наши покупатели о нас</h2>
     <div class="customers-review__inner">
@@ -862,15 +834,13 @@
             силами, сборка заняла один день. Благодарим Татьяну и Шеф Кухни!!!</p>
         </div>
       </div>
-      <div class="customers-review__image-wrapper">
-        <div class="customers-review__image img-cover">
-          <picture><source srcset="./assets/images/common/review/image.avif" type="image/avif"><source srcset="./assets/images/common/review/image.webp" type="image/webp"><img src="./assets/images/common/review/image.jpg" alt="Отзыв от Натальи"></picture>
-        </div>
+      <div class="customers-review__image img-cover img-cover_auto img-cover_hover img-zoom" data-viewer>
+        <picture><source srcset="./assets/images/common/review/image.avif" type="image/avif"><source srcset="./assets/images/common/review/image.webp" type="image/webp"><img src="./assets/images/common/review/image.jpg" alt="Отзыв от Натальи"></picture>
       </div>
     </div>
   </div>
 </section>
-      <section class="section section_education education">
+      <section class="section section_small education">
   <div class="container">
     <div class="education__inner">
       <div class="education__image img-cover">
@@ -882,12 +852,12 @@
           <p>Подробнее ...Качество и комфорт, стиль и функциональность, надёжность и уют — всё это выгодно сочетается в
             кухнях, которые мы реализуем</p>
         </div>
-        <a href="#" class="button button_secondary button_transparent">Смотреть больше</a>
+        <a href="./contacts.html" class="button button_secondary button_transparent">Смотреть больше</a>
       </div>
     </div>
   </div>
 </section>
-      <section class="section section_faq faq">
+      <section class="section section_normal faq">
   <div class="container">
     <h2 class="faq__title title">Вопрос-ответ</h2>
     <div class="faq__inner">
@@ -998,23 +968,20 @@
     </div>
   </div>
 </section>
-
-
-
     </main>
     <footer class="footer">
   <div class="container">
     <div class="footer__inner">
-      <a href="/" class="footer__logo">
+      <a href="./" class="footer__logo">
         <img src="./assets/images/logo.svg" alt="Логотип фирмы Шеф Кухни">
       </a>
       <ul class="footer__menu">
-        <li class="footer__menu-item footer__menu-item_active"><a href="#">Кухни</a></li>
+        <li class="footer__menu-item footer__menu-item_active"><a href="./catalog.html">Кухни</a></li>
         <li class="footer__menu-item"><a href="#">Корпусная мебель</a></li>
-        <li class="footer__menu-item"><a href="#">Портфолио</a></li>
-        <li class="footer__menu-item"><a href="#">О нас</a></li>
-        <li class="footer__menu-item"><a href="#">Акции</a></li>
-        <li class="footer__menu-item"><a href="#">Контакты</a></li>
+        <li class="footer__menu-item"><a href="./portfolio.html">Портфолио</a></li>
+        <li class="footer__menu-item"><a href="./company.html">О нас</a></li>
+        <li class="footer__menu-item"><a href="./stocks.html">Акции</a></li>
+        <li class="footer__menu-item"><a href="./contacts.html">Контакты</a></li>
       </ul>
       <div class="footer__communication communication">
         <div class="communication__inner">
@@ -1040,8 +1007,8 @@
 </ul>
       </div>
       <div class="footer__links">
-        <a href="#">Договор публичной оферты</a>
-        <a href="#">Политика конфиденциальности</a>
+        <a href="./agreement.html">Договор публичной оферты</a>
+        <a href="./privacy-policy.html">Политика конфиденциальности</a>
       </div>
       <div class="footer__address">
         <div class="addresses">
