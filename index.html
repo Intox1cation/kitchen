@@ -33,13 +33,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20231005230656"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20231005231855"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/libs.css?_v=20231005230656">
-  <link rel="stylesheet" href="./assets/css/style.css?_v=20231005230656">
+  <link rel="stylesheet" href="./assets/css/libs.css?_v=20231005231855">
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20231005231855">
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=8af7f125-89a4-425d-b14a-f9f752b36720&lang=ru_RU&_v=20231005230656"></script>
-  <script src="./assets/js/bundle.min.js?_v=20231005230656" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8af7f125-89a4-425d-b14a-f9f752b36720&lang=ru_RU&_v=20231005231855"></script>
+  <script src="./assets/js/bundle.min.js?_v=20231005231855" defer></script>
 </head>
 
 <body>
@@ -546,6 +546,26 @@
           <div class="stocks-main-slider__slide swiper-slide">
             <div class="stock-card stock-card_variant_1">
   <div class="stock-card__background">
+    <picture><source srcset="./assets/images/slides/stocks/image-1.avif" type="image/avif"><source srcset="./assets/images/slides/stocks/image-1.webp" type="image/webp"><img src="./assets/images/slides/stocks/image-1.jpg" alt="Скидки на кухни месяца"></picture>
+  </div>
+  <div class="stock-card__body">
+    <div class="stock-card__discount">
+      <div class="stock-card__discount-title h2">45%</div>
+      <div class="stock-card__discount-text">на кухни месяца</div>
+    </div>
+    <div class="stock-card__date">
+      до 31.12
+    </div>
+    <div class="stock-card__more">
+      <a href="./stocks-single.html">подробнее</a>
+    </div>
+  </div>
+</div>
+          </div>
+
+          <div class="stocks-main-slider__slide swiper-slide">
+            <div class="stock-card stock-card_variant_1">
+  <div class="stock-card__background">
     <picture><source srcset="./assets/images/slides/stocks/image-2.avif" type="image/avif"><source srcset="./assets/images/slides/stocks/image-2.webp" type="image/webp"><img src="./assets/images/slides/stocks/image-2.jpg" alt="Скидки на кухни месяца"></picture>
   </div>
   <div class="stock-card__body">
@@ -584,11 +604,11 @@
           </div>
         </div>
 
-        <div class="stocks-main-slider__navigation">
-          <button class="icon-button stocks-main-slider__arrow stocks-main-slider__arrow_prev">
+        <div class="arrow-navigation indent indent_size_4 indent_mt">
+          <button id="stocks-main-prev" class="icon-button arrow-navigation__arrow">
             <span class="icon icon-arrow-prev"></span>
           </button>
-          <button class="icon-button stocks-main-slider__arrow stocks-main-slider__arrow_next">
+          <button id="stocks-main-next" class="icon-button arrow-navigation__arrow">
             <span class="icon icon-arrow-next"></span>
           </button>
         </div>
