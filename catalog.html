@@ -33,13 +33,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20231005231855"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&display=swap&_v=20231006154757"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/libs.css?_v=20231005231855">
-  <link rel="stylesheet" href="./assets/css/style.css?_v=20231005231855">
+  <link rel="stylesheet" href="./assets/css/libs.css?_v=20231006154757">
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20231006154757">
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=8af7f125-89a4-425d-b14a-f9f752b36720&lang=ru_RU&_v=20231005231855"></script>
-  <script src="./assets/js/bundle.min.js?_v=20231005231855" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8af7f125-89a4-425d-b14a-f9f752b36720&lang=ru_RU&_v=20231006154757"></script>
+  <script src="./assets/js/bundle.min.js?_v=20231006154757" defer></script>
 </head>
 
 <body>
@@ -192,8 +192,8 @@
         <div class="page-navigation__actions">
           <div class="page-navigation__item">
             <button class="button button_text button_auto" data-filter-button>
-              <span class="d-block d-md-none">Фильтр</span>
               <span class="button__icon button__icon_right icon icon-filter"></span>
+              <span class="d-block d-md-none">Фильтр</span>
             </button>
           </div>
         </div>
@@ -1056,7 +1056,13 @@
 
       <div class="field-box">
         <div class="field">
-          <input type="tel" class="field__input" inputmode="tel" name="phone" placeholder="Номер телефона *">
+          <div class="field__select">
+            <select data-select data-select-phone>
+              <option data-display="Select" value="+7">+7</option>
+              <option value="+375">+375</option>
+            </select>
+          </div>
+          <input type="tel" class="field__input" inputmode="tel" name="phone" data-placeholder="Номер телефона *">
         </div>
         <div class="field-box__error"></div>
       </div>
